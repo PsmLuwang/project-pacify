@@ -23,14 +23,14 @@ button {
     height: 40px;
     padding-inline: 10px;
     width: 88px;
-    color: black;
+    color: #858585;
     border: none;
     background-color: transparent;
-    font-weight: 600;
+    font-weight: 500;
     transition: all 0.3s;
 }
 .btnBox:hover {
-    color: orangered;
+    color: #464b00;
 }
 /* header end here */
 
@@ -71,8 +71,8 @@ button {
     color: rgba(0, 0, 0, 0.635);
 }
 .catagoriesContainer button {
-    color: orangered;
-    background-color: rgb(255, 238, 207);
+    color: #464b00;
+    background-color: #eaeaea;
     border: none;
     height: 40px;
     width: 40px;
@@ -152,7 +152,7 @@ button {
     margin-right: 8px;
     width: 16px;
     text-align: center;
-    color: orangered;
+    /* color: orangered; */
 }
 .popularEventCard p {
     font-size: 0.8rem;
@@ -228,7 +228,7 @@ button {
 .upcomingEventCard i {
     width: 20px;
     text-align: center;
-    color: orangered;
+    /* color: orangered; */
 }
 .upcomingEventCard p {
     font-size: 0.7rem;

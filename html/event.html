@@ -196,6 +196,19 @@
 
     <script src="../javascript/home.js"></script>
     <script>
+        const btnBox = document.querySelectorAll('.btnBox');
+        btnBox[0].style.color = '#464b00';
+        btnBox[0].style.fontWeight = 'bold';
+        btnBox.forEach(btn => {
+            btn.addEventListener('click', () => {
+                btnBox.forEach(btn => {
+                    btn.style.color = '#858585'
+                    btn.style.fontWeight = '500'
+                })
+                btn.style.color = '#464b00'
+                btn.style.fontWeight = 'bold'
+            })
+        })
         const popularEventSlider = document.getElementById('popularEventSlider');
         for (let i = 0; i < 4; i++) {
             popularEventSlider.innerHTML += `
