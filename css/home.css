@@ -1,0 +1,446 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    /* max-width: 1460px; */
+    font-family: "Poppins", serif;
+    /* background-color: #ecedff; */
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #ecedff;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #dadffc;
+}
+header > div {
+    margin-inline: 20px;
+}
+.sideBarBtn {
+    border: 1px solid gray;
+    height: 30px;
+    width: 30px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search {
+    height: 40px;
+    flex: 1;
+    max-width: 500px;
+    border-radius: 20px;
+    background-color: #dadffc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 20px;
+    column-gap: 10px;
+}
+.search > input {
+    flex: 1;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1rem;
+    min-width: 1px;
+}
+@media (max-width: 450px) {
+    .search {
+        width: 100px;
+    }
+}
+
+
+header img {
+    margin-top: 3px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+
+
+/* side bar */
+aside.open {    
+    left: 0;
+    transition: all 0.4s;
+}
+aside {
+    z-index: 1;
+    position: fixed;
+    left: -280px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 62px);
+    background-color: #ecedff;
+    box-shadow: 2px 0 2px 0 rgba(128, 128, 128, 0.194);
+    transition: 0.4s;
+}
+.sideNavHeader {
+    display: flex;
+    align-items: center;
+    padding-top: 6px;
+}
+.sideNavHeader img {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+.sideNavHeader > div:not(:last-child) {
+    margin-inline: 20px;
+}
+.sideNavHeader h3,
+.sideNavHeader p {
+    margin: 0;
+    padding: 0;
+}
+.sideNavHeader p {
+    opacity: 0.6;
+    font-size: 0.8rem;
+}
+
+nav > ul {
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+nav > ul > li > a {
+    /* background-color: red; */
+    display: flex;
+    width: 100%;
+    height: 50px;
+    color: black;
+    column-gap: 15px;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 5px;
+    /* font-size: 0.9rem; */
+}
+nav > ul > li > a > i {
+    width: 20px;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 1.1rem;
+}
+nav > ul > li > a > span > p {
+    padding: 0;
+    margin: 0;
+    font-size: 0.6rem;
+    opacity: 0.6;
+    margin-top: -5px;
+}
+nav > ul > li > a:hover {
+    background-color: #dadffc;
+}
+
+
+.logout {
+    margin: 20px;
+}
+.logout > a {
+    background-color: #dadffc;
+    color: rgba(0, 0, 0, 0.589);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    text-decoration: none;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px 1px rgba(255, 255, 255, 0.336);
+    transition: 0.3s;
+}
+.logout > a:hover {
+    background-color: red;
+    color: white;
+}
+
+
+
+
+
+/* main */
+main {
+    width: 100%;
+    position: relative;
+    left: 0;
+    transition: 0.4s;   
+}
+aside.open~ main {
+    left: 280px;
+    width: calc(100% - 280px);
+}
+@media (max-width: 700px) {
+    aside.open~ main {
+        left: 0px;
+        width: calc(100% - 0px);
+        /* position: static; */
+    }
+}
+
+
+.statusSection {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    height: 200px;
+    margin: 10px;
+    width: calc(100% - 20px);
+}
+.myStatus {
+    position: relative;
+}
+.myStatus > img,
+.statusThumbnail {
+    height: 200px;
+    width: 130px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.myStatus > i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+.myStatus > div {
+    position: absolute;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    bottom: 6px;
+    left: 0;
+    right: 0;
+    border-radius: 0 0 10px 10px;
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.statusContainer {
+    flex: 1;
+    max-width: 940px;
+    height: 200px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+.statusContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.statusSlider {
+    display: flex;
+    column-gap: 10px;
+}
+.status {
+    height: 200px;
+    width: 130px;
+    position: relative;
+}
+.statusProfile {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    border: 3px solid blue;
+    padding: 2px;
+    object-fit: cover;
+}
+.status > p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: left;
+    margin: 10px;
+    font-size: 0.8rem;
+    color: white;
+    font-weight: 600;
+}
+
+
+
+/* banner */
+.adsBannerSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+}
+.bannerContainer {
+    width: 100%;
+    max-width: 940px;
+    position: relative;
+    /* background-color: blue; */
+}
+.banner {
+    width: 100%;
+    flex: 1;
+}
+.banner > img {
+    width: 100%;
+    max-width: 940px;
+    aspect-ratio: 10/2;
+    object-fit: cover;
+}
+.bannerLeft,
+.bannerRight {
+    position: absolute;
+    top: 0;
+    bottom: 7px;
+    aspect-ratio: 2/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    color: rgb(230, 230, 230);
+    cursor: pointer;
+    transition: 0.2s;
+}
+.bannerLeft {
+    left: 0;
+}
+.bannerRight {
+    right: 0;
+}
+.bannerLeft:hover, .bannerRight:hover {
+    background-color: rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(10px);
+}
+/* end of banner */
+
+.groupSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: red; */
+}
+.groupContainer {
+    width: 100%;
+    max-width: 940px;
+}
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    column-gap: 10px;
+    background-color: #ecedff;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.group:last-child {
+    margin-bottom: 180px;
+}
+.group:hover {
+    background-color: #dadffc;
+    
+}
+.group > img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    object-fit: cover;
+}
+.groupName {
+    flex: 1;
+    font-weight: 600;
+}
+.groupName p,
+.time p {
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin: 0;
+}
+.time p {
+    margin-right: 10px;
+}
+
+.newChat {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6371c1;
+    color: white;
+}
+
+
+
+/* footer */
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 16px;
+    left: 0px;
+    right: 0px;
+    transition: 0.4s;
+}
+aside.open~ main ~ footer {
+    width: calc(100% - 280px);
+    left: 280px;
+}
+@media (max-width: 700px) {
+    aside.open~ main ~ footer {
+        left: 0px;
+        width: calc(100% - 0px);
+        /* position: static; */
+    }
+}
+.shortcuts {
+    max-width: 940px;
+    width: calc(100% - 20px);
+    height: 48px;
+    background: radial-gradient(#dadffc84, #bac4ff4c);
+    /* background: #6371c1; */
+    /* //////////////////////////// */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 4px 2px rgba(187, 187, 187, 0.463);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 15px;
+}
+.shortcutsBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.874);
+    transition: 0.3s;
+}
+.shortcutsBtn:hover {
+    background-color: #b6bfff;
+}

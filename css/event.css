@@ -1,0 +1,236 @@
+button {
+    cursor: pointer;
+}
+.main {
+    background-color: #f9f9ff;
+}
+
+/* header of the page (3 btn event, upcomming, completed) */
+.eventHeaderSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.301);
+}
+.eventBtnContainer {
+    width: 100%;
+    max-width: 940px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.btnBox {
+    height: 40px;
+    padding-inline: 10px;
+    width: 88px;
+    color: black;
+    border: none;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+.btnBox:hover {
+    color: orangered;
+}
+/* header end here */
+
+/* ////////// event section /////////// */
+/* catagories */
+.catagoriesSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.catagoriesContainer {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 100%;
+    max-width: 940px;
+}
+.catagoriesContainer > div {
+    width: calc(100% - 30px);
+    display: grid;
+    margin-inline: 15px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.catagoriesContainer > h4,
+.popularContainer > h4,
+.upcomingContainer > h4 {
+    margin-left: 20px;
+}
+.catagoriesContainer > div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.catagoriesContainer > div p {
+    font-size: 0.65rem;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.635);
+}
+.catagoriesContainer button {
+    color: orangered;
+    background-color: rgb(255, 238, 207);
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+/* catagories ended here */
+
+/* Upcoming events */
+.popularSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 200px; */
+}
+.popularContainer {
+    width: 100%;
+    max-width: 940px;
+}
+.popularContainer > div {
+    margin-left: 10px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    display: flex;
+}
+
+/* event card */
+.popularEventCard {
+    /* background-color: green; */
+    width: 290px;
+    border-radius: 6px;
+    box-shadow: 0 0 2px 2px rgb(219, 219, 219);
+    margin: 4px;
+    background-color: white;
+    
+}
+.popularEventCard:last-child {
+    margin-right: 15px;
+}
+.popularEventCard > div {
+    position: relative;
+}
+.ticketLeft {
+    position: absolute;
+    right: 20px;
+    bottom: -5px;
+    background-color: orangered;
+    color: white;
+    font-weight: 600;
+    height: 20px;
+    width: 70px;
+    border-radius: 4px;
+    display: grid;
+    place-items: center;
+    font-size: 0.7rem;
+}
+.popularEventCard img {
+    width: 290px;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    border-radius: 6px 6px 0 0;
+}
+.popularEventCard h4,
+.popularEventCard p {
+    margin: 0;
+    margin-inline: 13px;
+}
+.popularEventPrice {
+    padding-block: 10px;
+    color: orangered;
+    margin-block: 0;
+}
+.popularEventCard i {
+    margin-right: 8px;
+    width: 16px;
+    text-align: center;
+    color: orangered;
+}
+.popularEventCard p {
+    font-size: 0.8rem;
+    color: rgb(59, 59, 59);
+}
+
+
+/* upcoming  event */
+.upcomingEventSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 200px;
+}
+.upcomingContainer {
+    width: 100%;
+    max-width: 940px;
+}
+.upcomingContainer > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    padding-inline: 10px;
+    transition: all 0.4s;
+}
+@media (max-width: 940px) {
+    .upcomingContainer > div {
+        grid-template-columns: 1fr;
+    }
+}
+/* upcoming  event  card */
+.upcomingEventCard {
+    background-color: white;
+    box-shadow: 0 0 2px 2px rgb(219, 219, 219);
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+.upcomingEventCard img {
+    width: 140px;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.upcomingImg {
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+.upcomingLeftTicket {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background-color: orange;
+    width: 60px;
+    font-size: 0.7rem;
+    height: 16px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+}
+.upcomingEventCard p,
+.upcomingEventCard h4,
+.upcomingEventCard h5 {
+    margin-block: 0;
+}
+.upcomingEventCard h4 {
+    padding: 0;
+}
+.upcomingEventCard i {
+    width: 20px;
+    text-align: center;
+    color: orangered;
+}
+.upcomingEventCard p {
+    font-size: 0.7rem;
+    color: rgba(0, 0, 0, 0.788);
+}

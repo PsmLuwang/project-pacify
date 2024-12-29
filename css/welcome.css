@@ -1,0 +1,246 @@
+body {
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapper2 {
+    display: none;
+}
+/* #wrapper2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+} */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    /* background-color: blue; */
+}
+
+header > h1, header > p {
+    margin: 0;
+    text-align: center;
+}
+header > p {
+    opacity: 0.7;
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    /* background-color: red; */
+    position: relative;
+}
+.slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    transition: 0.3s;
+}
+
+.slide img {
+    width: 400px;
+    height: 400px;
+}
+
+
+/* manual */
+.navigationManual {
+    position: absolute;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+}
+
+.manualBtn {
+    border:  2px solid rgb(194, 194, 194);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manualBtn:not(:last-child) {
+    margin-right: 30px;
+}
+.manualBtn:hover {
+    background: rgb(194, 194, 194);
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+
+/* auto */
+
+.navigationAuto {
+    position: absolute;
+    display: flex;
+    width: 400px;
+    justify-content: center;
+    bottom: 0;
+}
+
+.navigationAuto div {
+    border:  2px solid rgb(194, 194, 194);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigationAuto div:not(:last-child) {
+    margin-right: 30px;
+}
+
+#radio1:checked ~ .navigationAuto .autoBtn1 {
+    background: rgb(194, 194, 194);
+}
+#radio2:checked ~ .navigationAuto .autoBtn2 {
+    background: rgb(194, 194, 194);
+}
+#radio3:checked ~ .navigationAuto .autoBtn3 {
+    background: rgb(194, 194, 194);
+}
+
+
+.letsStart {
+    margin-top: 60px;
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background: #5c5c99;
+    font-weight: 600;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 280px;
+        height: 280px;
+    }
+    .slides {
+        height: 280px;
+    }
+    .slide img {
+        width: 280px;
+        height: 280px;
+    }
+    .navigationManual, .navigationAuto {
+        width: 280px;
+    }
+}
+
+
+
+
+
+.headerImg {
+    width: 100%;
+    margin-block: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* padding-left: 20px; */
+}
+.signUp {
+    margin-left: 40px;
+}
+.signIn {
+    margin-right: 20px;
+}
+.headerImg > img {
+    height: 150px;
+}
+.wrapper > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    width: calc(100% - 80px);
+    /* background-color: green; */
+}
+form > div {
+    margin-inline: 20px;
+    /* background-color: red; */
+    width: 100%;
+    height: 32px;
+    position: relative;
+    padding-inline: 10px;
+    border-bottom: 1px solid gray
+}
+.hideShow {
+    font-size: 0.9rem;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+form div > input {
+    height: 30px;
+    border: none;
+    outline: none;
+    width: calc(100% - 20px);
+    font-size: 1.1rem;
+}
+form > input {
+    font-size: 1.1rem;
+    height: 30px;
+    width: 100%;
+    padding-inline: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray
+}
+.submit {
+    margin-top: 40px;
+    border: none;
+    background: #5c5c99;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 5px;
+}
+/* remove spinner */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.bottomLink {
+    font-size: 0.8rem;
+}
+.forgetPassword {
+    text-align: right;
+    font-size: 0.8rem;
+    width: 100%;
+}

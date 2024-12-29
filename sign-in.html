@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/welcome.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Pacify</h1>
+        <p>Stay Calm</p>
+    </header>
+
+    <div class="wrapper">
+        <div class="headerImg">
+            <img src="asset/image/signin.png" alt="">
+            <h3 class="signIn">Sign in</h3>
+        </div>
+
+        <form action="">
+            <input type="email" placeholder="Email" required>
+            <div>
+                <input type="password" placeholder="Password" id="password" required>
+                <div class="hideShow">
+                    <i class="fa-solid fa-eye-slash hide"></i>
+                    <i class="fa-solid fa-eye show" style="display: none;"></i>
+                </div>
+            </div>
+
+            <a class="forgetPassword" href="#">Forget password.</a>
+            <input type="submit" class="submit">
+        </form>
+        <div class="bottomLink">
+            <p>
+                Already have an account? <a href="index.html">Sign up</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        const hide = document.querySelector('.hide');
+        const show = document.querySelector('.show');
+        const hideShow = document.querySelector('.hideShow');
+        const password = document.getElementById('password');
+        hideShow.addEventListener('click', () => {
+            if (password.type === 'password') {
+                password.type = 'text';
+                hide.style.display = 'none'
+                show.style.display = 'block'
+                
+            } else if (password.type === 'text') {
+                password.type = 'password';
+                show.style.display = 'none'
+                hide.style.display = 'block'
+            }
+            
+        })
+    </script>
+</body>
+</html>

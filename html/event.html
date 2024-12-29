@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/event.css">
+    <title>events</title>
+
+</head>
+<body>
+    <header class="header">
+        <div class="sideBarBtn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <section class="search">
+            <input type="text" placeholder="Search.....">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </section>
+        <div>
+            <img src="../asset/image/profile.jpeg" alt="">
+        </div>
+    </header>
+
+    <aside id="aside" class="aside open1">
+        <section>
+            <div class="sideNavHeader">
+                <div>
+                    <img src="../asset/image/logo.jpeg" alt="">
+                </div>
+                <div>
+                    <h3>Pacify</h3>
+                    <p>Stay Calm</p>
+                </div>
+            </div>
+
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="home.html">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Home <p>Group chatting.</p></span>
+                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-chalkboard-user"></i>
+                            <span>Meetings <p>zoom, online discustion.</p></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="calculator.html">
+                            <i class="fa-solid fa-calculator"></i>
+                            <span>Calculator <p>Find total price, vp, quantity, etc.</p></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-boxes-packing"></i>
+                            <span>Products <p>Products details. Price, ratings...</p></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-hospital-user"></i>
+                            <span>Testimonals <p>Results, before-after the product.</p></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="event.html">
+                            <i class="fa-regular fa-calendar-check"></i>
+                            <span>Events <p>Upcoming events, Booking Tickets.</p></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-bars-progress"></i>
+                            <span>Subscription <p>Get premium servics</p></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+
+        <div class="logout">
+            <a href="#">
+                <span>Log out</span>
+                <i class="fa-solid fa-person-walking-dashed-line-arrow-right"></i>
+            </a>
+        </div>
+    </aside>
+
+    <main class="main">
+        <section class="eventHeaderSection">
+            <div class="eventBtnContainer">
+                <div>
+                    <button class="btnBox">Event</button>
+                </div>
+                <div>
+                    <button class="btnBox">My Tickets</button>
+                </div>
+                <div>
+                    <button class="btnBox">Completed</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="catagoriesSection">
+            <div class="catagoriesContainer">
+                <h4>Catagories</h4>
+                <div>
+                    <div>
+                        <button><i class="fa-solid fa-globe"></i></button>
+                        <p>All</p>
+                    </div>
+                    <div>
+                        <button><i class="fa-solid fa-ranking-star"></i></button>
+                        <p>Spectacular</p>
+                    </div>
+                    <div>
+                        <button><i class="fa-solid fa-heart-pulse"></i></button>
+                        <p>Testimonials</p>
+                    </div>
+                    <div>
+                        <button><i class="fa-brands fa-hubspot"></i></button>
+                        <p>Training</p>
+                    </div>
+                    <div>
+                        <button><i class="fa-brands fa-megaport"></i></button>
+                        <p>Supervisor Meet</p>
+                    </div>
+                    <div>
+                        <button><i class="fa-solid fa-bullhorn"></i></button>
+                        <p>Announcement</p>
+                    </div>
+                    <div>
+                        <button><i class="fa-solid fa-medal"></i></button>
+                        <p>Recognition</p>
+                    </div>
+                    <div>
+                        <button><i class="fa-solid fa-feather"></i></button>
+                        <p>Others</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="popularSection">
+            <div class="popularContainer">
+                <h4>Popular Events</h4>
+                <div id="popularEventSlider">
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="upcomingEventSection">
+            <div class="upcomingContainer">
+                <h4>Upcoming Events</h4>
+                <div id="upcomingEventCardContainer">
+                    
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footerNav">
+        <div class="shortcuts">
+            <a class="shortcutsBtn" href="#">
+                <i class="fa-solid fa-chalkboard-user"></i>
+            </a>
+            <a class="shortcutsBtn" href="calculator.html">
+                <i class="fa-solid fa-calculator"></i>
+            </a>
+            <a class="shortcutsBtn" href="home.html">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <a class="shortcutsBtn" href="#">
+                <i class="fa-solid fa-boxes-packing"></i>
+            </a>
+            <a class="shortcutsBtn" href="#">
+                <i class="fa-solid fa-headset"></i>
+            </a>
+        </div>
+    </footer>
+
+
+
+    <script src="../javascript/home.js"></script>
+    <script>
+        const popularEventSlider = document.getElementById('popularEventSlider');
+        for (let i = 0; i < 4; i++) {
+            popularEventSlider.innerHTML += `
+                <div class="popularEventCard">
+                    <div>
+                        <img src="../asset/event/city.jpg" alt="">
+                        <div class="ticketLeft">
+                            345 left
+                        </div>
+                    </div>
+                    <h4>Spectacular</h4>
+                    <p><i class="fa-solid fa-location-dot"></i>City Convention Center</p>
+                    <p><i class="fa-solid fa-calendar-check"></i>12th Jan 2025</p>
+                    <p><i class="fa-solid fa-clock"></i>10:00 am - 3:00pm</p>
+                    <h4 class="popularEventPrice">₹800/-</h4>
+                </div>
+            `;
+            
+        }
+
+        const upcomingEventCardContainer = document.getElementById('upcomingEventCardContainer');
+        for (let i = 0; i < 9; i++) {
+            upcomingEventCardContainer.innerHTML += `
+                <div class="upcomingEventCard">
+                    <div class="upcomingImg">
+                        <img src="../asset/event/city.jpg" alt="">
+                        <div class="upcomingLeftTicket">
+                            324 left
+                        </div>
+                    </div>
+                    <div>
+                        <h5>Spectacular</h5>
+                        <p><i class="fa-solid fa-location-dot"></i>City Convention Center</p>
+                        <p><i class="fa-solid fa-calendar-check"></i>12th Jan 2025</p>
+                        <p><i class="fa-solid fa-clock"></i>10:00 am - 3:00pm</p>
+                        <h4 class="popularEventPrice">₹800/-</h4>
+                    </div>
+                </div>
+            `;
+            
+        }
+
+    </script>
+</body>
+</html>
