@@ -73,7 +73,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="event.html">
+                        <a href="event.html" class="navActive">
                             <i class="fa-regular fa-calendar-check"></i>
                             <span>Events <p>Upcoming events, Booking Tickets.</p></span>
                         </a>
@@ -101,79 +101,21 @@
         <section class="eventHeaderSection">
             <div class="eventBtnContainer">
                 <div>
-                    <button class="btnBox">Event</button>
+                    <button class="btnBox" onclick="events()">Event</button>
                 </div>
                 <div>
-                    <button class="btnBox">My Tickets</button>
+                    <button class="btnBox" onclick="myTickets()">My Tickets</button>
                 </div>
                 <div>
-                    <button class="btnBox">Completed</button>
+                    <button class="btnBox" onclick="completed()">Completed</button>
                 </div>
             </div>
         </section>
-
-        <section class="catagoriesSection">
-            <div class="catagoriesContainer">
-                <h4>Catagories</h4>
-                <div>
-                    <div>
-                        <button><i class="fa-solid fa-globe"></i></button>
-                        <p>All</p>
-                    </div>
-                    <div>
-                        <button><i class="fa-solid fa-ranking-star"></i></button>
-                        <p>Spectacular</p>
-                    </div>
-                    <div>
-                        <button><i class="fa-solid fa-heart-pulse"></i></button>
-                        <p>Testimonials</p>
-                    </div>
-                    <div>
-                        <button><i class="fa-brands fa-hubspot"></i></button>
-                        <p>Training</p>
-                    </div>
-                    <div>
-                        <button><i class="fa-brands fa-megaport"></i></button>
-                        <p>Supervisor Meet</p>
-                    </div>
-                    <div>
-                        <button><i class="fa-solid fa-bullhorn"></i></button>
-                        <p>Announcement</p>
-                    </div>
-                    <div>
-                        <button><i class="fa-solid fa-medal"></i></button>
-                        <p>Recognition</p>
-                    </div>
-                    <div>
-                        <button><i class="fa-solid fa-feather"></i></button>
-                        <p>Others</p>
-                    </div>
-                </div>
-            </div>
+        
+        <section id="eventWrapper">
+            
         </section>
-
-        <section class="popularSection">
-            <div class="popularContainer">
-                <h4>Popular Events</h4>
-                <div id="popularEventSlider">
-                    
-                </div>
-            </div>
-        </section>
-
-        <section class="upcomingEventSection">
-            <div class="upcomingContainer">
-                <h4>Upcoming Events</h4>
-                <div id="upcomingEventCardContainer">
-                    
-                </div>
-            </div>
-        </section>
-
-        <section>
-            ..
-        </section>
-
+        
     </main>
 
     <footer class="footerNav">
@@ -190,8 +132,8 @@
             <a class="shortcutsBtn" href="#">
                 <i class="fa-solid fa-boxes-packing"></i>
             </a>
-            <a class="shortcutsBtn" href="#">
-                <i class="fa-solid fa-headset"></i>
+            <a class="shortcutsBtn shortcutsBtnActive" href="event.html">
+                <i class="fa-regular fa-calendar-check"></i>
             </a>
         </div>
     </footer>
@@ -199,59 +141,212 @@
     <script src="../javascript/home.js"></script>
     <script>
         const btnBox = document.querySelectorAll('.btnBox');
-        btnBox[0].style.color = '#464b00';
-        btnBox[0].style.fontWeight = 'bold';
+        btnBox[0].classList.add('btnBoxActive')
         btnBox.forEach(btn => {
             btn.addEventListener('click', () => {
                 btnBox.forEach(btn => {
-                    btn.style.color = '#858585'
-                    btn.style.fontWeight = '500'
+                    btn.classList.remove('btnBoxActive')
                 })
-                btn.style.color = '#464b00'
-                btn.style.fontWeight = 'bold'
+                btn.classList.add('btnBoxActive')
             })
         })
-        const popularEventSlider = document.getElementById('popularEventSlider');
-        for (let i = 0; i < 4; i++) {
-            popularEventSlider.innerHTML += `
-                <div class="popularEventCard">
-                    <div>
-                        <img src="../asset/event/city.jpg" alt="">
-                        <div class="ticketLeft">
-                            345 left
+        events();
+        function events() {
+            const eventWrapper = document.getElementById('eventWrapper');
+            eventWrapper.innerHTML = `
+                <section class="catagoriesSection">
+                    <div class="catagoriesContainer">
+                        <h4>Catagories</h4>
+                        <div>
+                            <div>
+                                <button><i class="fa-solid fa-globe"></i></button>
+                                <p>All</p>
+                            </div>
+                            <div>
+                                <button><i class="fa-solid fa-ranking-star"></i></button>
+                                <p>Spectacular</p>
+                            </div>
+                            <div>
+                                <button><i class="fa-solid fa-heart-pulse"></i></button>
+                                <p>Testimonials</p>
+                            </div>
+                            <div>
+                                <button><i class="fa-brands fa-hubspot"></i></button>
+                                <p>Training</p>
+                            </div>
+                            <div>
+                                <button><i class="fa-brands fa-megaport"></i></button>
+                                <p>Supervisor Meet</p>
+                            </div>
+                            <div>
+                                <button><i class="fa-solid fa-bullhorn"></i></button>
+                                <p>Announcement</p>
+                            </div>
+                            <div>
+                                <button><i class="fa-solid fa-medal"></i></button>
+                                <p>Recognition</p>
+                            </div>
+                            <div>
+                                <button><i class="fa-solid fa-feather"></i></button>
+                                <p>Others</p>
+                            </div>
                         </div>
                     </div>
-                    <h4>Spectacular</h4>
-                    <p><i class="fa-solid fa-location-dot"></i>City Convention Center</p>
-                    <p><i class="fa-solid fa-calendar-check"></i>12th Jan 2025</p>
-                    <p><i class="fa-solid fa-clock"></i>10:00 am - 3:00pm</p>
-                    <h4 class="popularEventPrice">₹800/-</h4>
-                </div>
-            `;
-            
-        }
+                </section>
 
-        const upcomingEventCardContainer = document.getElementById('upcomingEventCardContainer');
-        for (let i = 0; i < 9; i++) {
-            upcomingEventCardContainer.innerHTML += `
-                <div class="upcomingEventCard">
-                    <div class="upcomingImg">
-                        <img src="../asset/event/city.jpg" alt="">
-                        <div class="upcomingLeftTicket">
-                            324 left
+                <section class="popularSection">
+                    <div class="popularContainer">
+                        <h4>Popular Events</h4>
+                        <div id="popularEventSlider">
+                            
                         </div>
                     </div>
-                    <div>
-                        <h5>Spectacular</h5>
+                </section>
+
+                <section class="upcomingEventSection">
+                    <div class="upcomingContainer">
+                        <h4>Upcoming Events</h4>
+                        <div id="upcomingEventCardContainer">
+                            
+                        </div>
+                    </div>
+                </section>
+            `;
+            const popularEventSlider = document.getElementById('popularEventSlider');
+            for (let i = 0; i < 4; i++) {
+                popularEventSlider.innerHTML += `
+                    <div class="popularEventCard">
+                        <div>
+                            <img src="../asset/event/city.jpg" alt="">
+                            <div class="ticketLeft">
+                                345 left
+                            </div>
+                        </div>
+                        <h4>Spectacular</h4>
                         <p><i class="fa-solid fa-location-dot"></i>City Convention Center</p>
                         <p><i class="fa-solid fa-calendar-check"></i>12th Jan 2025</p>
                         <p><i class="fa-solid fa-clock"></i>10:00 am - 3:00pm</p>
                         <h4 class="popularEventPrice">₹800/-</h4>
                     </div>
-                </div>
-            `;
-            
+                `;
+                
+            }
+
+            const upcomingEventCardContainer = document.getElementById('upcomingEventCardContainer');
+            for (let i = 0; i < 9; i++) {
+                upcomingEventCardContainer.innerHTML += `
+                    <div class="upcomingEventCard">
+                        <div class="upcomingImg">
+                            <img src="../asset/event/city.jpg" alt="">
+                            <div class="upcomingLeftTicket">
+                                324 left
+                            </div>
+                        </div>
+                        <div>
+                            <h5>Spectacular</h5>
+                            <p><i class="fa-solid fa-location-dot"></i>City Convention Center</p>
+                            <p><i class="fa-solid fa-calendar-check"></i>12th Jan 2025</p>
+                            <p><i class="fa-solid fa-clock"></i>10:00 am - 3:00pm</p>
+                            <h4 class="popularEventPrice">₹800/-</h4>
+                        </div>
+                    </div>
+                `;
+                
+            }
         }
+
+        function myTickets() {
+            const eventWrapper = document.getElementById('eventWrapper');
+                eventWrapper.innerHTML = `
+                    <section class="ticketSection">
+                    <div class="ticketContainer">
+                        <div class="ticket">
+                            <div>
+                                <img src="../asset/event/city.jpg" alt="">
+                            </div>
+                            <h4>Spectacular</h4>
+                            <p><i class="fa-solid fa-location-dot"></i>City Convention Center</p>
+                            <p><i class="fa-solid fa-calendar-check"></i>12th Jan 2025</p>
+                            <p><i class="fa-solid fa-clock"></i>10:00 am - 3:00pm</p>
+                            <div class="ticketBtn">
+                                <button>View</button>
+                                <button>Download</button>
+                            </div>
+                        </div>
+        
+                        <div class="ticket">
+                            <div>
+                                <img src="../asset/event/city.jpg" alt="">
+                            </div>
+                            <h4>Spectacular</h4>
+                            <p><i class="fa-solid fa-location-dot"></i>City Convention Center</p>
+                            <p><i class="fa-solid fa-calendar-check"></i>12th Jan 2025</p>
+                            <p><i class="fa-solid fa-clock"></i>10:00 am - 3:00pm</p>
+                            <div class="ticketBtn">
+                                <button>View</button>
+                                <button>Download</button>
+                            </div>
+                        </div>
+        
+                        <div class="ticket">
+                            <div>
+                                <img src="../asset/event/city.jpg" alt="">
+                            </div>
+                            <h4>Spectacular</h4>
+                            <p><i class="fa-solid fa-location-dot"></i>City Convention Center</p>
+                            <p><i class="fa-solid fa-calendar-check"></i>12th Jan 2025</p>
+                            <p><i class="fa-solid fa-clock"></i>10:00 am - 3:00pm</p>
+                            <div class="ticketBtn">
+                                <button>View</button>
+                                <button>Download</button>
+                            </div>
+                        </div>
+        
+                    </div>
+                    
+                </section>
+            `;
+        }
+        
+        function completed() {
+            const eventWrapper = document.getElementById('eventWrapper');
+                eventWrapper.innerHTML = `
+                    <section class="ticketSection">
+                    <div class="ticketContainer">
+                        <div class="ticket">
+                            <div>
+                                <img src="../asset/event/city.jpg" alt="">
+                            </div>
+                            <h4>Spectacular</h4>
+                            <p><i class="fa-solid fa-location-dot"></i>City Convention Center</p>
+                            <p><i class="fa-solid fa-calendar-check"></i>12th Jan 2025</p>
+                            <p><i class="fa-solid fa-clock"></i>10:00 am - 3:00pm</p>
+                            <div class="ticketBtn">
+                                <button>View</button>
+                                <button>Download</button>
+                            </div>
+                        </div>
+        
+                        <div class="ticket">
+                            <div>
+                                <img src="../asset/event/city.jpg" alt="">
+                            </div>
+                            <h4>Spectacular</h4>
+                            <p><i class="fa-solid fa-location-dot"></i>City Convention Center</p>
+                            <p><i class="fa-solid fa-calendar-check"></i>12th Jan 2025</p>
+                            <p><i class="fa-solid fa-clock"></i>10:00 am - 3:00pm</p>
+                            <div class="ticketBtn">
+                                <button>View</button>
+                                <button>Download</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+            `;
+        }
+
+        
 
     </script>
 </body>

@@ -1,7 +1,7 @@
 button {
     cursor: pointer;
 }
-.main {
+body {
     background-color: #f9f9ff;
 }
 
@@ -20,6 +20,7 @@ button {
     align-items: center;
 }
 .btnBox {
+    position: relative;
     height: 40px;
     padding-inline: 10px;
     width: 88px;
@@ -31,6 +32,29 @@ button {
 }
 .btnBox:hover {
     color: #464b00;
+}
+.btnBoxActive::before,
+.btnBox::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    background: #464b00;
+    border-radius: 4px 4px 0 0;
+    transform: scaleX(0);
+    transition: transform 0.2s linear;
+}
+.btnBox:hover::before {
+    transform: scaleX(1);
+}
+.btnBoxActive {
+    color: #464b00;
+    font-weight: bold;
+}
+.btnBoxActive::before {
+    transform: scaleX(1);
 }
 /* header end here */
 
@@ -233,4 +257,71 @@ button {
 .upcomingEventCard p {
     font-size: 0.7rem;
     color: rgba(0, 0, 0, 0.788);
+}
+/* ////////// ended event section /////////// */
+
+/* ////////// ticket section /////////// */
+
+.ticketSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+.ticketContainer {
+    width: calc(100% - 40px);
+    max-width: 940px;
+    padding: 20px;
+    gap: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 740px) {
+    .ticketContainer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 600px) {
+    .ticketContainer {
+        grid-template-columns: 1fr;
+    }
+}
+
+.ticket {
+    box-shadow: 0 0 4px 2px rgb(206, 206, 206);
+    border-radius: 15px;
+}
+.ticket img {
+    width: 100%;
+    min-width: 200px;
+    aspect-ratio: 3/2;
+    border-radius: 15px 15px 0 0;
+}
+.ticket h4,
+.ticket p {
+    margin: 0 10px;
+}
+.ticket p {
+    font-size: 0.8rem;
+}
+.ticket i {
+    width: 25px;
+    text-align: center;
+}
+.ticketBtn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+.ticketBtn button {
+    height: 36px;
+    border-radius: 18px;
+    border: none;
+    font-weight: bold;
+    color: orangered;
+}
+.ticketBtn button:last-child {
+    background-color: orangered;
+    color: white;
 }

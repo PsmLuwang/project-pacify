@@ -145,7 +145,9 @@ nav > ul > li > a > span > p {
 nav > ul > li > a:hover {
     background-color: #dadffc;
 }
-
+.navActive {
+    background-color: #dadffc;
+}
 
 .logout {
     margin: 20px;
@@ -442,5 +444,8 @@ aside.open~ main ~ footer {
     transition: 0.3s;
 }
 .shortcutsBtn:hover {
+    background-color: #b6bfff;
+}
+.shortcutsBtnActive {
     background-color: #b6bfff;
 }
