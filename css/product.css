@@ -21,7 +21,8 @@ body {
 }
 
 .product {
-    background-color: white;
+    /* background-color: white; */
+    background-color: #fafaff;
     border-radius: 5px;
     box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.176);
     display: flex;
@@ -36,7 +37,7 @@ body {
 }
 .product > div:first-child {
     width: 35%;
-    background-color: #f4f4ff;
+    background-color: white;
     border-radius: 5px 0 0 5px;
 }
 .product > div:nth-child(2) {
@@ -49,6 +50,9 @@ body {
 }
 .product img {
     width: 100%;
+    aspect-ratio: 1;
+    object-fit:contain;
+    border-radius: 5px 0 0 5px;
 }
 .product h5,
 .product p {

@@ -41,7 +41,7 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="home.html" class="navActive">
+                        <a href="home.html">
                             <i class="fa-solid fa-house"></i>
                             <span>Home <p>Group chatting.</p></span>
                             
@@ -60,7 +60,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="product.html">
+                        <a href="product.html" class="navActive">
                             <i class="fa-solid fa-boxes-packing"></i>
                             <span>Products <p>Products details. Price, ratings...</p></span>
                         </a>
@@ -130,17 +130,17 @@
 
     <script>
         const productContainer = document.querySelector('.productContainer');
-        for (let i = 0; i < productDetails.length; i++) {
+        for (let i = 0; i < allProducts.length; i++) {
             productContainer.innerHTML += `
                 <div class="product">
                     <div>
-                        <img src="../asset/products/shakemate.png" alt="">
+                        <img src="../asset/products/${allProducts[i].varients[0].image[0]}" alt="">
                     </div>
                     <div>
-                        <h5>ShakeMate</h5>
-                        <p>₹456</p>
-                        <p>12.3 vp</p>
-                        <p>This is description</p>
+                        <h5>${allProducts[i].name}</h5>
+                        <p>₹${allProducts[i].mrp}/-</p>
+                        <p>${allProducts[i].vp} vp</p>
+                        <p>Net Quantity: ${allProducts[i].quantity}</p>
                         <div>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
