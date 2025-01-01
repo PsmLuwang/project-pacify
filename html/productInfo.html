@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/productInfo.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <div class="backBtn">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        </div>
+        
+        <div>
+            <img src="../asset/image/profile.jpeg" alt="">
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="productInfoSection">
+            <div class="productInfoContainer">
+                <div>
+                    <div class="ratingStar">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="displayImg">
+                        <img src="../asset/products/24hydrate-A.jpg" alt="">
+                    </div>
+                    <div class="relatedImg">
+                        <img src="../asset/products/formula1-vanilla-A.jpg" alt="">
+                        <img src="../asset/products/formula1-vanilla-B.jpg" alt="">
+                        <img src="../asset/products/formula1-vanilla-C.png" alt="">
+                        <img src="../asset/products/formula1DetailsA.png" alt="">
+                        <img src="../asset/products/formula1DetailsB.png" alt="">
+                    </div>
+                </div>
+                <div class="details">
+                    <h4>Formula 1</h4>
+                    <p>MRP: ₹2143/-</p>
+                    <p>13.95 vp</p>
+                    <p>Net quantity: 400g</p>
+                    <select name="" id="" class="flavour">
+                        <option value="">Banana</option>
+                        <option value="">Orange</option>
+                        <option value="">Vanilla</option>
+                    </select>
+                    <p>Description:</p>
+                    <p id="description">
+                        
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="shortcuts">
+            <a class="shortcutsBtn" href="#">
+                <i class="fa-solid fa-chalkboard-user"></i>
+            </a>
+            <a class="shortcutsBtn" href="calculator.html">
+                <i class="fa-solid fa-calculator"></i>
+            </a>
+            <a class="shortcutsBtn" href="home.html">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <a class="shortcutsBtn shortcutsBtnActive" href="product.html">
+                <i class="fa-solid fa-boxes-packing"></i>
+            </a>
+            <a class="shortcutsBtn" href="event.html">
+                <i class="fa-regular fa-calendar-check"></i>
+            </a>
+        </div>
+    </footer>
+
+
+    <script src="../javascript/home.js"></script>
+    <script src="../javascript/productDetails.js"></script>
+
+    <script>
+        function addSpacesBetweenParagraphs(text) {
+            const paragraphs = text.split('..');
+            const formattedDescription = paragraphs.join(".\n\n");
+            return formattedDescription;
+        }
+
+        // const description = document.getElementById('description').innerText;
+        const formattedDescription = addSpacesBetweenParagraphs(`Formula 1 Nutritional Shake Mix is a delicious meal for healthy nutrition and weight management. It provides an ideal balance of protein and nutrition to help satisfy your hunger and provides you with energy.. Consumption of High Protein Meal Replacement (HPMR) along with a calorie-restricted diet and moderate physical activity daily, showed reduction in body weight and body fat percentage along with improvement/healthy maintenance of blood lipid profile.. Enjoy Formula 1 Nutritional Shake Mix once or twice a day along with portion-controlled nutrition and exercise to help keep the body fit.`);
+        
+        document.getElementById('description').innerText += formattedDescription;
+    </script>
+
+</body>
+
+</html>
