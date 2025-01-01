@@ -89,7 +89,7 @@
                 <h4>${allProducts[value].name}</h4>
                 <p>MRP: ₹${allProducts[value].mrp}/-</p>
                 <p>${allProducts[value].vp} vp</p>
-                <p>Net quantity: ${allProducts[value].quantity}</p>
+                <p id="quantity">Net quantity: ${allProducts[value].varients[0].quantity}</p>
                 <select name="" id="" class="flavour">
                     
                 </select>
@@ -99,14 +99,27 @@
                 </p>
             </div>
         `;
-        
+
+        const displayImg = document.querySelector('.displayImg');
         const relatedImg = document.querySelector('.relatedImg');
         relatedImg.innerHTML = ``;
         for (let i = 0; i < allProducts[value].varients[0].image.length; i++) {
             relatedImg.innerHTML += `
-                <img src="../asset/products/${allProducts[value].varients[0].image[i]}" alt="">
+                <img class="relatedImgSelected" src="../asset/products/${allProducts[value].varients[0].image[i]}" alt="">
             `;
         }
+        const relatedImgSelected = document.querySelectorAll('.relatedImgSelected');
+        relatedImgSelected[0].style.borderColor = 'orange';
+        relatedImgSelected.forEach((img, index) => {
+            img.addEventListener('click', () => {
+                relatedImgSelected.forEach(img => {
+                    img.style.borderColor = 'rgb(200, 200, 200)'
+                    displayImg.innerHTML = `<img src="../asset/products/${allProducts[value].varients[0].image[index]}" alt="">`;
+                })
+                img.style.borderColor = 'orange'
+
+            })
+        })
 
         const flavour = document.querySelector('.flavour');
         for (let i = 0; i < allProducts[value].varients.length; i++) {
@@ -125,13 +138,28 @@
             const displayImg = document.querySelector('.displayImg');
             displayImg.innerHTML = `<img src="../asset/products/${allProducts[value].varients[selectedFlavour].image[0]}" alt="">`;
 
+            const quantity = document.getElementById('quantity');
+            quantity.innerText = `Net quantity: ${allProducts[value].varients[selectedFlavour].quantity}`;
+
             const relatedImg = document.querySelector('.relatedImg');
             relatedImg.innerHTML = ``;
-            for (let i = 0; i < allProducts[value].varients[0].image.length; i++) {
+            for (let i = 0; i < allProducts[value].varients[selectedFlavour].image.length; i++) {
                 relatedImg.innerHTML += `
-                    <img src="../asset/products/${allProducts[value].varients[selectedFlavour].image[i]}" alt="">
+                    <img class="relatedImgSelected" src="../asset/products/${allProducts[value].varients[selectedFlavour].image[i]}" alt="">
                 `;
             }
+            const relatedImgSelected = document.querySelectorAll('.relatedImgSelected');
+            relatedImgSelected[0].style.borderColor = 'orange';
+            relatedImgSelected.forEach((img, index) => {
+                img.addEventListener('click', () => {
+                    relatedImgSelected.forEach(img => {
+                        img.style.borderColor = 'rgb(200, 200, 200)'
+                        displayImg.innerHTML = `<img src="../asset/products/${allProducts[value].varients[selectedFlavour].image[index]}" alt="">`;
+                    })
+                    img.style.borderColor = 'orange'
+
+                })
+            })
             
         })
 

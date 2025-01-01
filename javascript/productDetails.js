@@ -80,10 +80,11 @@ var allProducts = [
         'name' : 'Formula 1' ,
         'vp' : 21.75 ,
         'mrp' : 2449 ,
-        'quantity' : '500g',
+        
         'varients' : [
             {
                 'flavour' : 'Vanila',
+                'quantity' : '500g',
                 'image' : [
                     'formula1-vanilla-A.jpg',
                     'formula1-vanilla-B.jpg',
@@ -94,6 +95,7 @@ var allProducts = [
             },
             {
                 'flavour' : 'Chocolate',
+                'quantity' : '500g',
                 'image' : [
                     'formula1-chocolate-A.jpg',
                     'formula1-chocolate-B.jpg',
@@ -104,6 +106,7 @@ var allProducts = [
             },
             {
                 'flavour' : 'Mango',
+                'quantity' : '500g',
                 'image' : [
                     'formula1-mango-A.jpg',
                     'formula1-mango-B.jpg',
@@ -114,6 +117,7 @@ var allProducts = [
             },
             {
                 'flavour' : 'Orange Cream',
+                'quantity' : '500g',
                 'image' : [
                     'formula1-orangeCream-A.jpg',
                     'formula1-orangeCream-B.jpg',
@@ -124,6 +128,7 @@ var allProducts = [
             },
             {
                 'flavour' : 'Strawberry',
+                'quantity' : '500g',
                 'image' : [
                     'formula1-strawberry-A.jpg',
                     'formula1-strawberry-B.jpg',
@@ -134,6 +139,7 @@ var allProducts = [
             },
             {
                 'flavour' : 'Kulfi',
+                'quantity' : '500g',
                 'image' : [
                     'formula1-kulfi-A.jpg',
                     'formula1-kulfi-B.jpg',
@@ -144,6 +150,7 @@ var allProducts = [
             },
             {
                 'flavour' : 'Banana Caramel',
+                'quantity' : '500g',
                 'image' : [
                     'formula1-bananaCaramel-A.jpg',
                     'formula1-bananaCaramel-B.jpg',
@@ -154,6 +161,7 @@ var allProducts = [
             },
             {
                 'flavour' : 'Rose Kheer',
+                'quantity' : '500g',
                 'image' : [
                     'formula1-roseKheer-A.jpg',
                     'formula1-roseKheer-B.jpg',
@@ -164,6 +172,7 @@ var allProducts = [
             },
             {
                 'flavour' : 'Paan',
+                'quantity' : '500g',
                 'image' : [
                     'formula1-paan-A.jpg',
                     'formula1-paan-B.jpg',
@@ -179,10 +188,10 @@ var allProducts = [
         'name' : 'PPP - 200g' ,
         'vp' : 11.50 ,
         'mrp' : 1455 ,
-        'quantity' : '200g',
         'varients' : [
             {
                 'flavour' : '',
+                'quantity' : '200g',
                 'image' : [
                     'ppp-200g-A.jpg',
                     'ppp-200g-B.jpg',
@@ -198,10 +207,10 @@ var allProducts = [
         'name' : 'PPP - 400g' ,
         'vp' : 22.50 ,
         'mrp' : 2792 ,
-        'quantity' : '400g',
         'varients' : [
             {
                 'flavour' : '',
+                'quantity' : '400g',
                 'image' : [
                     'ppp-400g-A.jpg',
                     'ppp-400g-B.jpg',
@@ -217,10 +226,10 @@ var allProducts = [
         'name' : 'ShakeMate' ,
         'vp' : 6.45 ,
         'mrp' : 733 ,
-        'quantity' : '500g',
         'varients' : [
             {
                 'flavour' : '',
+                'quantity' : '500g',
                 'image' : [
                     'shakemate-A.png',
                     'shakemate-B.png',
@@ -237,10 +246,10 @@ var allProducts = [
         'name' : 'Ocular Defence' ,
         'vp' : 19.25 ,
         'mrp' : 2166 ,
-        'quantity' : '30 Number',
         'varients' : [
             {
                 'flavour' : '',
+                'quantity' : '30 Number',
                 'image' : [
                     'oculardefence-A.jpg',
                     'oculardefence-B.png',
@@ -255,10 +264,10 @@ var allProducts = [
         'name' : 'Male Factor' ,
         'vp' : 34.75 ,
         'mrp' : 3832 ,
-        'quantity' : '60 Number',
         'varients' : [
             {
                 'flavour' : '',
+                'quantity' : '60 Number',
                 'image' : [
                     'malefactor-A.jpg',
                     'malefactor-B.jpg',
@@ -274,10 +283,10 @@ var allProducts = [
         'name' : "Woman's Choice" ,
         'vp' : 12.45 ,
         'mrp' : 1399 ,
-        'quantity' : '30 Number',
         'varients' : [
             {
                 'flavour' : '',
+                'quantity' : '30 Number',
                 'image' : [
                     'womanschoice-A.jpg',
                     'womanschoice-B.jpg',
@@ -293,10 +302,10 @@ var allProducts = [
         'name' : 'Brain Health' ,
         'vp' : 15.10 ,
         'mrp' : 1645 ,
-        'quantity' : '60 Number',
         'varients' : [
             {
                 'flavour' : '',
+                'quantity' : '60 Number',
                 'image' : [
                     'brainhealth-A.jpg',
                     'brainhealth-B.jpg',
@@ -312,10 +321,10 @@ var allProducts = [
         'name' : 'Cleanser' ,
         'vp' : 10.40 ,
         'mrp' : 1165 ,
-        'quantity' : '100ml',
         'varients' : [
             {
                 'flavour' : '',
+                'quantity' : '100ml',
                 'image' : [
                     'cleanser.png'
                 ]
@@ -327,10 +336,10 @@ var allProducts = [
         'name' : 'Toner' ,
         'vp' : 11.80 ,
         'mrp' : 1322 ,
-        'quantity' : '100ml',
         'varients' : [
             {
                 'flavour' : '',
+                'quantity' : '100ml',
                 'image' : [
                     'toner.png'
                 ]
@@ -342,10 +351,10 @@ var allProducts = [
         'name' : 'Serum' ,
         'vp' : 27.05 ,
         'mrp' : 3022 ,
-        'quantity' : '30ml',
         'varients' : [
             {
                 'flavour' : '',
+                'quantity' : '30ml',
                 'image' : [
                     'serum.png'
                 ]
@@ -357,10 +366,10 @@ var allProducts = [
         'name' : 'Moisturizer' ,
         'vp' : 13.15 ,
         'mrp' : 1473 ,
-        'quantity' : '100ml',
         'varients' : [
             {
                 'flavour' : '',
+                'quantity' : '100ml',
                 'image' : [
                     'moisturizer.png'
                 ]
@@ -372,10 +381,10 @@ var allProducts = [
         'name' : 'Skin Booster' ,
         'vp' : 38.65 ,
         'mrp' : 4394 ,
-        'quantity' : '10g x 30',
         'varients' : [
             {
                 'flavour' : '',
+                'quantity' : '10g x 30',
                 'image' : [
                     'skinbooster-A.jpg',
                     'skinbooster-B.jpg',
@@ -391,10 +400,10 @@ var allProducts = [
         'name' : 'Skin Booster Orange' ,
         'vp' : 38.65 ,
         'mrp' : 4266 ,
-        'quantity' : '300g',
         'varients' : [
             {
                 'flavour' : 'Orange',
+                'quantity' : '300g',
                 'image' : [
                     'skinboosterorange.png'
                 ]
@@ -406,10 +415,10 @@ var allProducts = [
         'name' : 'Immune Health' ,
         'vp' : 15.80 ,
         'mrp' : 1717 ,
-        'quantity' : '60 Number',
         'varients' : [
             {
                 'flavour' : '',
+                'quantity' : '60 Number',
                 'image' : [
                     'immunehealth-A.jpg',
                     'immunehealth-B.jpg',
@@ -425,10 +434,10 @@ var allProducts = [
         'name' : 'Afresh' ,
         'vp' : 7.80 ,
         'mrp' : 913 ,
-        'quantity' : '50g',
         'varients' : [
             {
                 'flavour' : 'Cinnamon',
+                'quantity' : '50g',
                 'image' : [
                     'afresh-cinnamon-A.jpg',
                     'afresh-cinnamon-B.jpg',
@@ -439,6 +448,7 @@ var allProducts = [
             },
             {
                 'flavour' : 'Ginger',
+                'quantity' : '50g',
                 'image' : [
                     'afresh-ginger-A.jpg',
                     'afresh-ginger-B.png',
@@ -448,6 +458,7 @@ var allProducts = [
             },
             {
                 'flavour' : 'Elaichi',
+                'quantity' : '50g',
                 'image' : [
                     'afresh-elaichi-A.jpg',
                     'afresh-elaichi-B.jpg',
@@ -458,6 +469,7 @@ var allProducts = [
             },
             {
                 'flavour' : 'Lemon',
+                'quantity' : '50g',
                 'image' : [
                     'afresh-lemon-A.jpg',
                     'afresh-lemon-B.jpg',
@@ -468,6 +480,7 @@ var allProducts = [
             },
             {
                 'flavour' : 'Peach',
+                'quantity' : '50g',
                 'image' : [
                     'afresh-peach-A.jpg',
                     'afresh-peach-B.jpg',
@@ -478,24 +491,17 @@ var allProducts = [
             },
             {
                 'flavour' : 'Tulsi',
+                'quantity' : '50g',
                 'image' : [
                     'afresh-tulsi-A.jpg',
-                    'afresh-tulsi-C.png',
+                    'afresh-tulsi-B.png',
                     'afreshDetails-A.png',
                     'afreshDetails-B.png',
                 ]
             },
-        ]
-    },
-    {
-        'id' : '1295' ,
-        'name' : 'Afresh Kashmiri Kahwa' ,
-        'vp' : 7.80 ,
-        'mrp' : 913 ,
-        'quantity' : '40g',
-        'varients' : [
             {
                 'flavour' : 'Kashmiri Kahwa',
+                'quantity' : '40g',
                 'image' : [
                     'afresh-kashmirikahwa-A.jpg',
                     'afresh-kashmirikahwa-B.jpg',
@@ -511,10 +517,10 @@ var allProducts = [
         'name' : '24 Hydrate' ,
         'vp' : 14.05 ,
         'mrp' : 1839 ,
-        'quantity' : '5g x 20',
         'varients' : [
             {
                 'flavour' : '',
+                'quantity' : '5g x 20',
                 'image' : [
                     '24hydrate-A.jpg',
                     '24hydrate-B.jpg',
@@ -530,10 +536,10 @@ var allProducts = [
         'name' : '24 Rebuild' ,
         'vp' : 24.70 ,
         'mrp' : 2940 ,
-        'quantity' : '50g x 10',
         'varients' : [
             {
                 'flavour' : '',
+                'quantity' : '50g x 10',
                 'image' : [
                     '24rebuild-A.jpg',
                     '24rebuild-B.jpg',
@@ -551,10 +557,10 @@ var allProducts = [
         'name' : 'DinoShake' ,
         'vp' : 9.60 ,
         'mrp' : 1252 ,
-        'quantity' : '200g',
         'varients' : [
             {
                 'flavour' : 'Strawberry',
+                'quantity' : '200g',
                 'image' : [
                     'dinoshake-strawberry-A.jpg',
                     'dinoshake-strawberry-B.jpg',
@@ -565,6 +571,7 @@ var allProducts = [
             },
             {
                 'flavour' : 'Chocolate',
+                'quantity' : '200g',
                 'image' : [
                     'dinoshake-chocolate-A.jpg',
                     'dinoshake-chocolate-B.jpg',
@@ -580,10 +587,10 @@ var allProducts = [
         'name' : 'Activated Fiber' ,
         'vp' : 15.75 ,
         'mrp' : 1839 ,
-        'quantity' : '90 Number',
         'varients' : [
             {
                 'flavour' : '',
+                'quantity' : '90 Number',
                 'image' : [
                     'activatedfibre-A.jpg',
                     'activatedfibre-B.jpg',
@@ -599,10 +606,10 @@ var allProducts = [
         'name' : 'Active Fiber Complex' ,
         'vp' : 22.95 ,
         'mrp' : 2876 ,
-        'quantity' : '200g',
         'varients' : [
             {
                 'flavour' : '',
+                'quantity' : '200g',
                 'image' : [
                     'activefibercomplex-A.jpg',
                     'activefibercomplex-B.jpg',
@@ -618,10 +625,10 @@ var allProducts = [
         'name' : 'Aloe Plus' ,
         'vp' : 9.40 ,
         'mrp' : 1190 ,
-        'quantity' : '60 Number',
         'varients' : [
             {
                 'flavour' : '',
+                'quantity' : '60 Number',
                 'image' : [
                     'aloeplus-A.jpg',
                     'aloeplus-B.jpg',
@@ -637,10 +644,10 @@ var allProducts = [
         'name' : 'Aloe Concentrate' ,
         'vp' : 24.95 ,
         'mrp' : 3030 ,
-        'quantity' : '500ml',
         'varients' : [
             {
                 'flavour' : '',
+                'quantity' : '500ml',
                 'image' : [
                     'aloeconcentrate-A.png',
                     'aloeconcentrate-B.png',
@@ -656,10 +663,10 @@ var allProducts = [
         'name' : 'Simply Probiotic' ,
         'vp' : 21.95 ,
         'mrp' : 2482 ,
-        'quantity' : '1g x 30',
         'varients' : [
             {
                 'flavour' : '',
+                'quantity' : '1g x 30',
                 'image' : [
                     'simplyprobiotic-A.jpg',
                     'simplyprobiotic-B.jpg',
@@ -676,10 +683,10 @@ var allProducts = [
         'name' : 'Triphala' ,
         'vp' : 11.25 ,
         'mrp' : 1224 ,
-        'quantity' : '60 Number',
         'varients' : [
             {
                 'flavour' : '',
+                'quantity' : '60 Number',
                 'image' : [
                     'triphala-A.jpg',
                     'triphala-B.jpg',
@@ -695,10 +702,10 @@ var allProducts = [
         'name' : 'Calcium' ,
         'vp' : 10.25 ,
         'mrp' : 1352 ,
-        'quantity' : '60 Number',
         'varients' : [
             {
                 'flavour' : '',
+                'quantity' : '60 Number',
                 'image' : [
                     'calcium-A.jpg',
                     'calcium-B.jpg',
@@ -714,10 +721,10 @@ var allProducts = [
         'name' : 'Joint Support' ,
         'vp' : 20.90 ,
         'mrp' : 2759 ,
-        'quantity' : '90 Number',
         'varients' : [
             {
                 'flavour' : '',
+                'quantity' : '90 Number',
                 'image' : [
                     'jointsupport-A.jpg',
                     'jointsupport-B.jpg',
@@ -733,10 +740,10 @@ var allProducts = [
         'name' : 'Niteworks' ,
         'vp' : 75 ,
         'mrp' : 8010 ,
-        'quantity' : '300g',
         'varients' : [
             {
                 'flavour' : '',
+                'quantity' : '300g',
                 'image' : [
                     'nitework-A.jpg',
                     'nitework-B.png',
@@ -753,10 +760,10 @@ var allProducts = [
         'name' : 'Lifeline' ,
         'vp' : 25.75 ,
         'mrp' : 2990 ,
-        'quantity' : '60 Number',
         'varients' : [
             {
                 'flavour' : '',
+                'quantity' : '60 Number',
                 'image' : [
                     'lifeline-A.jpg',
                     'lifeline-B.png',
@@ -771,10 +778,10 @@ var allProducts = [
         'name' : 'Beta Heart' ,
         'vp' : 19.55 ,
         'mrp' : 2520 ,
-        'quantity' : '15g x 15',
         'varients' : [
             {
                 'flavour' : 'Vanilla',
+                'quantity' : '15g x 15',
                 'image' : [
                     'betaheart-A.jpg',
                     'betaheart-B.jpg',
@@ -792,10 +799,10 @@ var allProducts = [
         'name' : 'Multivitamin' ,
         'vp' : 19.95 ,
         'mrp' : 2252 ,
-        'quantity' : '90 Number',
         'varients' : [
             {
                 'flavour' : '',
+                'quantity' : '90 Number',
                 'image' : [
                     'multivitamin-A.jpg',
                     'multivitamin-B.jpg',
@@ -810,10 +817,10 @@ var allProducts = [
         'name' : 'Cell Activator' ,
         'vp' : 21.95 ,
         'mrp' : 2489 ,
-        'quantity' : '60 Number',
         'varients' : [
             {
                 'flavour' : '',
+                'quantity' : '60 Number',
                 'image' : [
                     'cellactivator-A.jpg',
                     'cellactivator-B.jpg',
@@ -829,16 +836,16 @@ var allProducts = [
         'name' : 'Cell-U-Loss' ,
         'vp' : 15.75 ,
         'mrp' : 1916 ,
-        'quantity' : '90 Number',
         'varients' : [
             {
                 'flavour' : '',
+                'quantity' : '90 Number',
                 'image' : [
-                    'celuloss-A.jpg',
-                    'celuloss-B.jpg',
-                    'celuloss-C.png',
-                    'celuloss-D.png',
-                    'celuloss-E.png',
+                    'celluloss-A.jpg',
+                    'celluloss-B.jpg',
+                    'celluloss-C.png',
+                    'celluloss-D.png',
+                    'celluloss-E.png',
                 ]
             }
         ]
@@ -848,10 +855,10 @@ var allProducts = [
         'name' : 'Herbal Control' ,
         'vp' : 32.95 ,
         'mrp' : 3858 ,
-        'quantity' : '90 Number',
         'varients' : [
             {
                 'flavour' : '',
+                'quantity' : '90 Number',
                 'image' : [
                     'herbalcontrol-A.jpg',
                     'herbalcontrol-B.jpg',
