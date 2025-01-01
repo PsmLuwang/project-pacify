@@ -29,40 +29,7 @@
     <main class="main">
         <section class="productInfoSection">
             <div class="productInfoContainer">
-                <div>
-                    <div class="ratingStar">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <div class="displayImg">
-                        <img src="../asset/products/formula1-vanilla-A.jpg" alt="">
-                    </div>
-                    <div class="relatedImg">
-                        <img src="../asset/products/formula1-vanilla-A.jpg" alt="">
-                        <img src="../asset/products/formula1-vanilla-B.jpg" alt="">
-                        <img src="../asset/products/formula1-vanilla-C.png" alt="">
-                        <img src="../asset/products/formula1DetailsA.png" alt="">
-                        <img src="../asset/products/formula1DetailsB.png" alt="">
-                    </div>
-                </div>
-                <div class="details">
-                    <h4>Formula 1</h4>
-                    <p>MRP: ₹2143/-</p>
-                    <p>13.95 vp</p>
-                    <p>Net quantity: 400g</p>
-                    <select name="" id="" class="flavour">
-                        <option value="">Banana</option>
-                        <option value="">Orange</option>
-                        <option value="">Vanilla</option>
-                    </select>
-                    <p>Description:</p>
-                    <p id="description">
-                        
-                    </p>
-                </div>
+                
             </div>
         </section>
     </main>
@@ -92,6 +59,88 @@
     <script src="../javascript/productDetails.js"></script>
 
     <script>
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const value = urlParams.get('value');
+
+        const productInfoContainer = document.querySelector('.productInfoContainer');
+        productInfoContainer.innerHTML = `
+            <div>
+                <div class="ratingStar">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="displayImg">
+                    <img src="../asset/products/${allProducts[value].varients[0].image[0]}" alt="">
+                </div>
+                <div class="relatedImg">
+                    
+                </div>
+            </div>
+
+            <div class="details">
+                <button class="share">
+                    <i class="fa-solid fa-share-nodes"></i>
+                </button>
+
+                <h4>${allProducts[value].name}</h4>
+                <p>MRP: ₹${allProducts[value].mrp}/-</p>
+                <p>${allProducts[value].vp} vp</p>
+                <p>Net quantity: ${allProducts[value].quantity}</p>
+                <select name="" id="" class="flavour">
+                    
+                </select>
+                <p>Description:</p>
+                <p id="description">
+                    
+                </p>
+            </div>
+        `;
+        
+        const relatedImg = document.querySelector('.relatedImg');
+        relatedImg.innerHTML = ``;
+        for (let i = 0; i < allProducts[value].varients[0].image.length; i++) {
+            relatedImg.innerHTML += `
+                <img src="../asset/products/${allProducts[value].varients[0].image[i]}" alt="">
+            `;
+        }
+
+        const flavour = document.querySelector('.flavour');
+        for (let i = 0; i < allProducts[value].varients.length; i++) {
+            if (allProducts[value].varients[i].flavour === '') {
+                flavour.style.display = 'none';
+                break;
+            } else {
+                flavour.innerHTML += `
+                    <option value="${i}" >${allProducts[value].varients[i].flavour}</option>
+                `;
+            }
+        }
+        flavour.addEventListener('change', (event) => {
+            const selectedFlavour = event.target.value;
+
+            const displayImg = document.querySelector('.displayImg');
+            displayImg.innerHTML = `<img src="../asset/products/${allProducts[value].varients[selectedFlavour].image[0]}" alt="">`;
+
+            const relatedImg = document.querySelector('.relatedImg');
+            relatedImg.innerHTML = ``;
+            for (let i = 0; i < allProducts[value].varients[0].image.length; i++) {
+                relatedImg.innerHTML += `
+                    <img src="../asset/products/${allProducts[value].varients[selectedFlavour].image[i]}" alt="">
+                `;
+            }
+            
+        })
+
+
+
+
+
+
+
         function addSpacesBetweenParagraphs(text) {
             const paragraphs = text.split('..');
             const formattedDescription = paragraphs.join(".\n\n");

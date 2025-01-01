@@ -132,7 +132,7 @@
         const productContainer = document.querySelector('.productContainer');
         for (let i = 0; i < allProducts.length; i++) {
             productContainer.innerHTML += `
-                <div class="product">
+                <div class="product" onclick="window.location.href='productInfo.html?value=${i}'">
                     <div>
                         <img src="../asset/products/${allProducts[i].varients[0].image[0]}" alt="">
                     </div>
