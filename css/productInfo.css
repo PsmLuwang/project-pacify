@@ -80,7 +80,9 @@
     height: 30px;
     border-radius: 5px;
     padding-inline: 5px;
-    border: 2px solid #505890;
+    /* border: 2px solid #505890; */
+    border: none;
+    background-color: #ecedff;
     color: #081155;
     outline: none;
 }
