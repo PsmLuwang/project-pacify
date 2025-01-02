@@ -80,7 +80,6 @@ var allProducts = [
         'name' : 'Formula 1' ,
         'vp' : 21.75 ,
         'mrp' : 2449 ,
-        
         'varients' : [
             {
                 'flavour' : 'Vanila',
@@ -181,7 +180,8 @@ var allProducts = [
                     'formula1DetailsB.png',
                 ]
             },
-        ]
+        ],
+        'description' : 'Formula 1 Nutritional Shake Mix is a delicious meal for healthy nutrition and weight management. It provides an ideal balance of protein and nutrition to help satisfy your hunger and provides you with energy.. Consumption of High Protein Meal Replacement (HPMR) along with a calorie-restricted diet and moderate physical activity daily, showed reduction in body weight and body fat percentage along with improvement/healthy maintenance of blood lipid profile.. Enjoy Formula 1 Nutritional Shake Mix once or twice a day along with portion-controlled nutrition and exercise to help keep the body fit.'
     },
     {
         'id' : '1233' ,
@@ -200,7 +200,8 @@ var allProducts = [
                     'pppDetailsB200.png',
                 ]
             }
-        ]
+        ],
+        'description' : 'Personalized Protein Powder is a convenient way to increase your protein consumption which helps to maintain your energy level between meals and helps you to maintain muscle mass'
     },
     {
         'id' : '1569' ,
@@ -219,7 +220,8 @@ var allProducts = [
                     'pppDetailsB.png',
                 ]
             }
-        ]
+        ],
+        'description' : ''
     },
     {
         'id' : '183K' ,
@@ -239,7 +241,8 @@ var allProducts = [
                     'shakemate-F.png',
                 ]
             }
-        ]
+        ],
+        'description' : ''
      },
     {
         'id' : '0064' ,
@@ -257,7 +260,8 @@ var allProducts = [
                     'oculardefence-D.png',
                 ]
             }
-        ]
+        ],
+        'description' : ''
     },
     {
         'id' : '175K' ,
@@ -276,7 +280,8 @@ var allProducts = [
                     'malefactor-E.png',
                 ]
             }
-        ]
+        ],
+        'description' : ''
     },
     {
         'id' : '127K' ,
@@ -295,7 +300,8 @@ var allProducts = [
                     'womanschoice-E.png',
                 ]
             }
-        ]
+        ],
+        'description' : ''
     },
     {
         'id' : '109K' ,
@@ -314,7 +320,8 @@ var allProducts = [
                     'brainhealth-E.png',
                 ]
             }
-        ]
+        ],
+        'description' : ''
     },
     {
         'id' : '275K' ,
@@ -329,7 +336,8 @@ var allProducts = [
                     'cleanser.png'
                 ]
             }
-        ]
+        ],
+        'description' : ''
     },
     {
         'id' : '315K' ,
@@ -344,7 +352,8 @@ var allProducts = [
                     'toner.png'
                 ]
             }
-        ]
+        ],
+        'description' : ''
     },
     {
         'id' : '276K' ,
@@ -359,7 +368,8 @@ var allProducts = [
                     'serum.png'
                 ]
             }
-        ]
+        ],
+        'description' : ''
     },
     {
         'id' : '277K' ,
@@ -374,7 +384,8 @@ var allProducts = [
                     'moisturizer.png'
                 ]
             }
-        ]
+        ],
+        'description' : ''
     },
     {
         'id' : '046K' ,
@@ -393,7 +404,8 @@ var allProducts = [
                     'skinbooster-E.png',
                 ]
             }
-        ]
+        ],
+        'description' : ''
     },
     {
         'id' : '316K' ,
@@ -408,7 +420,8 @@ var allProducts = [
                     'skinboosterorange.png'
                 ]
             }
-        ]
+        ],
+        'description' : ''
     },
     {
         'id' : '115K' ,
@@ -427,7 +440,8 @@ var allProducts = [
                     'immunehealth-E.png',
                 ]
             }
-        ]
+        ],
+        'description' : ''
     },
     {
         'id' : '1295' ,
@@ -510,7 +524,8 @@ var allProducts = [
                     'afreshDetails-B.png',
                 ]
             },
-        ]
+        ],
+        'description' : ''
     },
     {
         'id' : '1458' ,
@@ -529,7 +544,8 @@ var allProducts = [
                     '24hydrate-E.jpg',
                 ]
             }
-        ]
+        ],
+        'description' : ''
     },
     {
         'id' : '031K' ,
@@ -550,7 +566,8 @@ var allProducts = [
                     '24rebuild-G.png',
                 ]
             }
-        ]
+        ],
+        'description' : ''
     },
     {
         'id' : '1279' ,
@@ -580,7 +597,8 @@ var allProducts = [
                     'dinoshakeDetailsB.png',
                 ]
             }
-        ]
+        ],
+        'description' : ''
     },
     {
         'id' : '1278' ,
@@ -599,7 +617,8 @@ var allProducts = [
                     'activatedfibre-E.png',
                 ]
             }
-        ]
+        ],
+        'description' : ''
     },
     {
         'id' : '2865' ,
@@ -618,7 +637,8 @@ var allProducts = [
                     'activefibercomplex-E.png',
                 ]
             }
-        ]
+        ],
+        'description' : ''
     },
     {
         'id' : '1293' ,
@@ -637,7 +657,8 @@ var allProducts = [
                     'aloeplus-E.png',
                 ]
             }
-        ]
+        ],
+        'description' : ''
     },
     {
         'id' : '0006' ,
@@ -656,7 +677,8 @@ var allProducts = [
                     'aloeconcentrate-E.png',
                 ]
             }
-        ]
+        ],
+        'description' : ''
     },
     {
         'id' : '025K' ,
@@ -676,7 +698,8 @@ var allProducts = [
                     'simplyprobiotic-F.png',
                 ]
             }
-        ]
+        ],
+        'description' : ''
     },
     {
         'id' : '186K' ,
@@ -695,7 +718,8 @@ var allProducts = [
                     'triphala-E.png',
                 ]
             }
-        ]
+        ],
+        'description' : ''
     },
     {
         'id' : '0020' ,
@@ -714,7 +738,8 @@ var allProducts = [
                     'calcium-E.png',
                 ]
             }
-        ]
+        ],
+        'description' : ''
     },
     {
         'id' : '0555' ,
@@ -733,7 +758,8 @@ var allProducts = [
                     'jointsupport-E.png',
                 ]
             }
-        ]
+        ],
+        'description' : ''
     },
     {
         'id' : '2637' ,
@@ -752,7 +778,8 @@ var allProducts = [
                     'nitework-E.png',
                 ]
             }
-        ]
+        ],
+        'description' : ''
     },
     {
 
@@ -771,7 +798,8 @@ var allProducts = [
                     'lifeline-D.png',
                 ]
             }
-        ]
+        ],
+        'description' : ''
     },
     {
         'id' : '051K' ,
@@ -792,7 +820,8 @@ var allProducts = [
                     'betaheart-G.png',
                 ]
             }
-        ]
+        ],
+        'description' : ''
     },
     {
         'id' : '1232' ,
@@ -810,7 +839,8 @@ var allProducts = [
                     'multivitamin-D.jpg',
                 ]
             }
-        ]
+        ],
+        'description' : ''
     },
     {
         'id' : '3123' ,
@@ -829,7 +859,8 @@ var allProducts = [
                     'cellactivator-E.png',
                 ]
             }
-        ]
+        ],
+        'description' : ''
     },
     {
         'id' : '0111' ,
@@ -848,7 +879,8 @@ var allProducts = [
                     'celluloss-E.png',
                 ]
             }
-        ]
+        ],
+        'description' : ''
     },
     {
         'id' : '0077' ,
@@ -867,6 +899,7 @@ var allProducts = [
                     'herbalcontrol-E.png',
                 ]
             }
-        ]
+        ],
+        'description' : ''
     },
 ]

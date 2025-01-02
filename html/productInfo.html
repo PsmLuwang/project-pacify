@@ -17,9 +17,9 @@
 
 <body>
     <header>
-        <div class="backBtn">
+        <button class="backBtn" onclick="window.history.back()">
             <i class="fa-solid fa-arrow-right-from-bracket"></i>
-        </div>
+        </button>
         
         <div>
             <img src="../asset/image/profile.jpeg" alt="">
@@ -63,6 +63,7 @@
         const urlParams = new URLSearchParams(window.location.search);
         const value = urlParams.get('value');
 
+        // inserting the main HTML inside the main tag.
         const productInfoContainer = document.querySelector('.productInfoContainer');
         productInfoContainer.innerHTML = `
             <div>
@@ -74,7 +75,7 @@
                     <i class="fa-solid fa-star-half-stroke"></i>
                 </div>
                 <div class="displayImg">
-                    <img src="../asset/products/${allProducts[value].varients[0].image[0]}" alt="">
+                    
                 </div>
                 <div class="relatedImg">
                     
@@ -89,7 +90,9 @@
                 <h4>${allProducts[value].name}</h4>
                 <p>MRP: ₹${allProducts[value].mrp}/-</p>
                 <p>${allProducts[value].vp} vp</p>
-                <p id="quantity">Net quantity: ${allProducts[value].varients[0].quantity}</p>
+                <p id="quantity">
+                
+                </p>
                 <select name="" id="" class="flavour">
                     
                 </select>
@@ -100,27 +103,7 @@
             </div>
         `;
 
-        const displayImg = document.querySelector('.displayImg');
-        const relatedImg = document.querySelector('.relatedImg');
-        relatedImg.innerHTML = ``;
-        for (let i = 0; i < allProducts[value].varients[0].image.length; i++) {
-            relatedImg.innerHTML += `
-                <img class="relatedImgSelected" src="../asset/products/${allProducts[value].varients[0].image[i]}" alt="">
-            `;
-        }
-        const relatedImgSelected = document.querySelectorAll('.relatedImgSelected');
-        relatedImgSelected[0].style.borderColor = 'orange';
-        relatedImgSelected.forEach((img, index) => {
-            img.addEventListener('click', () => {
-                relatedImgSelected.forEach(img => {
-                    img.style.borderColor = 'rgb(200, 200, 200)'
-                    displayImg.innerHTML = `<img src="../asset/products/${allProducts[value].varients[0].image[index]}" alt="">`;
-                })
-                img.style.borderColor = 'orange'
-
-            })
-        })
-
+        // inserting options in select tag for flavour.
         const flavour = document.querySelector('.flavour');
         for (let i = 0; i < allProducts[value].varients.length; i++) {
             if (allProducts[value].varients[i].flavour === '') {
@@ -132,14 +115,19 @@
                 `;
             }
         }
+
+        flavourAllDetails(0);
+
+        // update details when the flavour has changed.
         flavour.addEventListener('change', (event) => {
             const selectedFlavour = event.target.value;
+            flavourAllDetails(selectedFlavour);
+        })
 
+        // update all the details of the selected product.
+        function flavourAllDetails(selectedFlavour) {
             const displayImg = document.querySelector('.displayImg');
             displayImg.innerHTML = `<img src="../asset/products/${allProducts[value].varients[selectedFlavour].image[0]}" alt="">`;
-
-            const quantity = document.getElementById('quantity');
-            quantity.innerText = `Net quantity: ${allProducts[value].varients[selectedFlavour].quantity}`;
 
             const relatedImg = document.querySelector('.relatedImg');
             relatedImg.innerHTML = ``;
@@ -148,6 +136,8 @@
                     <img class="relatedImgSelected" src="../asset/products/${allProducts[value].varients[selectedFlavour].image[i]}" alt="">
                 `;
             }
+
+            // border animation
             const relatedImgSelected = document.querySelectorAll('.relatedImgSelected');
             relatedImgSelected[0].style.borderColor = 'orange';
             relatedImgSelected.forEach((img, index) => {
@@ -157,16 +147,13 @@
                         displayImg.innerHTML = `<img src="../asset/products/${allProducts[value].varients[selectedFlavour].image[index]}" alt="">`;
                     })
                     img.style.borderColor = 'orange'
-
                 })
             })
-            
-        })
 
-
-
-
-
+            // update the quantity.
+            const quantity = document.getElementById('quantity');
+            quantity.innerText = `Net quantity: ${allProducts[value].varients[selectedFlavour].quantity}`;
+        }
 
 
         function addSpacesBetweenParagraphs(text) {
@@ -175,10 +162,9 @@
             return formattedDescription;
         }
 
-        // const description = document.getElementById('description').innerText;
-        const formattedDescription = addSpacesBetweenParagraphs(`Formula 1 Nutritional Shake Mix is a delicious meal for healthy nutrition and weight management. It provides an ideal balance of protein and nutrition to help satisfy your hunger and provides you with energy.. Consumption of High Protein Meal Replacement (HPMR) along with a calorie-restricted diet and moderate physical activity daily, showed reduction in body weight and body fat percentage along with improvement/healthy maintenance of blood lipid profile.. Enjoy Formula 1 Nutritional Shake Mix once or twice a day along with portion-controlled nutrition and exercise to help keep the body fit.`);
+        const formattedDescription = addSpacesBetweenParagraphs(`${allProducts[value].description}`);
         
-        document.getElementById('description').innerText += formattedDescription;
+        document.getElementById('description').innerText = formattedDescription;
     </script>
 
 </body>

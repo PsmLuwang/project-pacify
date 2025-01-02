@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/eTicket.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <button class="backBtn" onclick="window.history.back()">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        </button>
+
+        <div>
+            <img src="../asset/image/profile.jpeg" alt="">
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="viewTicketSection">
+            <div class="ticketContainer">
+                <div class="ticket">
+                    <div class="qrCode">
+                        <p>Scan this QR code at the entry gate</p>
+                        <img src="../asset/qrCode/qrCode.png" alt="">
+                        <p>Ticket no. 2345</p>
+                        <i class="fa-solid fa-caret-right qrCodeNext"></i>
+                        <i class="fa-solid fa-caret-left qrCodePrevious"></i>
+                        <div class="outLineLeft"></div>
+                        <div class="outLineRight"></div>
+                    </div>
+                    <div>
+                        <div class="eventDetails">
+                            <h4>Spectacular</h4>
+                            <p><i class="fa-solid fa-location-dot"></i>City Convention Center</p>
+                            <p><i class="fa-solid fa-calendar-check"></i>12th Jan 2025</p>
+                            <p><i class="fa-solid fa-clock"></i>10:00 am - 3:00pm</p>
+                        </div>
+                        <div class="ticketDetails">
+                            <div>
+                                <div>
+                                    <span>Booking date:</span>
+                                    <p><b>10th - Dec - 2024</b></p>
+                                </div>
+                                <div>
+                                    <h3>₹800</h3>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <span>Transaction:</span>
+                                <p><b>985293840</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="../javascript/home.js"></script>
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>

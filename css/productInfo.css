@@ -1,15 +1,4 @@
-.backBtn {
-    rotate: 180deg;
-    padding-top: 1px;
-    background-color: #b6bfff;
-    height: 30px;
-    width: 30px;
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
+
 .productInfoSection {
     width: 100%;
     display: flex;

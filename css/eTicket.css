@@ -1,0 +1,94 @@
+
+body {
+    background-color: #b6bfff;
+}
+.viewTicketSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.ticketContainer {
+    width: calc(100% - 40px);
+    max-width: 1360px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+.ticket {
+    background-color: white;
+    flex: 1;
+    max-width: 350px;
+    border-radius: 20px;
+}
+
+.qrCode {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-bottom: none;
+    background-image: linear-gradient(to right, #b6bfff 50%, transparent 50%);
+    background-size: 17px 2px;
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+}
+.qrCode img {
+    width: 160px;
+}
+.qrCodeNext,
+.qrCodePrevious {
+    position: absolute;
+}
+.qrCodePrevious {
+    left: 20px;
+}
+.qrCodeNext {
+    right: 20px;
+}
+.outLineLeft,
+.outLineRight {
+    position: absolute;
+    background-color: #b6bfff;
+    height: 20px;
+    width: 10px;
+    bottom: -9px;
+}
+.outLineLeft {
+    left: 0;
+    border-radius: 0 20px 20px 0;
+}
+.outLineRight {
+    right: 0;
+    border-radius: 20px 0 0 20px;
+}
+
+
+
+.eventDetails {
+    padding-inline: 10px;
+}
+.ticket p,
+.ticket span {
+    font-size: 0.8rem;
+}
+.ticket h4 {
+    text-align: center;
+}
+.eventDetails i {
+    width: 25px;
+    text-align: center;
+}
+
+.ticketDetails {
+    background-color: #ecedff;
+    padding-inline: 10px;
+    margin-bottom: 20px;
+}
+.ticketDetails > div:first-child {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
