@@ -201,7 +201,7 @@ var allProducts = [
                 ]
             }
         ],
-        'description' : 'Personalized Protein Powder is a convenient way to increase your protein consumption which helps to maintain your energy level between meals and helps you to maintain muscle mass'
+        'description' : 'Personalized Protein Powder is a convenient way to increase your protein consumption which helps to maintain your energy level between meals and helps you to maintain muscle mass.'
     },
     {
         'id' : '1569' ,
@@ -221,7 +221,7 @@ var allProducts = [
                 ]
             }
         ],
-        'description' : ''
+        'description' : 'Personalized Protein Powder is a convenient way to increase your protein consumption which helps to maintain your energy level between meals and helps you to maintain muscle mass.'
     },
     {
         'id' : '183K' ,
@@ -242,7 +242,7 @@ var allProducts = [
                 ]
             }
         ],
-        'description' : ''
+        'description' : 'Perfect partner for your Formula 1 Nutritional Shake Mix, it makes your shake taste great.. Provides approximately 1/3rd of Lactose when compared to 300ml of Skimmed Milk. It is a Low Glycemic Index Food. Delivers 10.75 g of high – quality Protein ** per serve. Delivers 1g fat, 1.65 mcg Vitamin D & 129 mg Calcium per serve. No added Sugar, Contains natural sweetener i.e. Stevia.'
      },
     {
         'id' : '0064' ,
@@ -261,7 +261,7 @@ var allProducts = [
                 ]
             }
         ],
-        'description' : ''
+        'description' : 'Ocular Defense is a scientifically designed formula; developed to support eye health.. Key Ingredients: Lutein, zeaxanthin, Copper, Zinc, Vitamin A, C, E.. Disclaimer :Pregnant or lactating women should consult their physician prior to use of this product.  This product is not intended to diagnose, treat, prevent, or cure any disease.'
     },
     {
         'id' : '175K' ,
@@ -281,7 +281,7 @@ var allProducts = [
                 ]
             }
         ],
-        'description' : ''
+        'description' : 'Designed for men.. Contains blend of standardized fenugreek extract, pine bark (Pinus Gerardiana) extract and L – Citrulline. Key benefits:.. Male Sexual Arousal.. Male Sexual Health.. Male Libido'
     },
     {
         'id' : '127K' ,
@@ -301,7 +301,7 @@ var allProducts = [
                 ]
             }
         ],
-        'description' : ''
+        'description' : 'Woman’s Choice includes plant-derived ingredients, and these ingredients help women to find their natural balance and enjoy their life.. Formulated with a special blend of soy isoflavones and chasteberry (Vitexagnus-castus). Soy isoflavones and chasteberry help to support comfort and general well-being during monthly hormonal fluctuation in women. Soy isoflavones and chasteberry may help manage menopausal-related quality of life.'
     },
     {
         'id' : '109K' ,
@@ -321,7 +321,7 @@ var allProducts = [
                 ]
             }
         ],
-        'description' : ''
+        'description' : 'Vritilife -Brain Health.. Feature and benefits.. Formulated with ancient Ayurvedic knowledge along with established research and technology.. Fuel indicator of Brain performance - learning, memory, focus, accuracy, concentration with Brahmi**, also known as Bacopa monnieri.. Patented Brahmi** extract with unique phytochemical composition.. Brahmi is extensively researched for its functional benefits for a healthy brain and supported by 11 clinical studies.. Contain GRAS (Generally Recognized As Safe) certified Brahmi** extract.. 100% pure Brahmi** extract.. Brahmi** extract has been tested at 5 stages to ensure quality.. Verified quality of Brahmi** extract having traceability right from the farm.'
     },
     {
         'id' : '275K' ,
@@ -337,7 +337,7 @@ var allProducts = [
                 ]
             }
         ],
-        'description' : ''
+        'description' : 'Vritilife Facial cleanser is judiciously crafted for soft and supple cleanse with Neem, Turmeric, and camphor oil.With no harmful chemicals# offers clean and smoother skin experiencing no dryness after wash and makes feel fresh on every wash.Prepares^ skin for the next step of moisturizing.. #Please see the product label(s) for more information.. ^Rid face of dirt ,oil, pollutants, oil soluble impurities.'
     },
     {
         'id' : '315K' ,
@@ -353,7 +353,7 @@ var allProducts = [
                 ]
             }
         ],
-        'description' : ''
+        'description' : 'Vritilife Facial Toner is an On the go skin freshener that gently conditions the skin. With instant absorption being similar to Skin pH , splash the goodness of Aloe and Cucumber that makes your skin feel cool and smooth .By using vritilife Toner after cleansing the face , it not only boosts hydration but also makes skin feel clear and supple.'
     },
     {
         'id' : '276K' ,
@@ -369,7 +369,7 @@ var allProducts = [
                 ]
             }
         ],
-        'description' : ''
+        'description' : 'Vritilife Facial Serum is a unique blend of Ayurveda beauty oils to reduce discoloration, dullness and fine lines.Indulge yourself and make your skin smile while pampering with vritilife serum because Abhyanga, a gentle oil massage is an ancient way of enhancing skin quality*. It Improves facial skin elasticity and firmness.. *Skin tone, complexion,  elasticity, reduces dryness, removes the dirt.'
     },
     {
         'id' : '277K' ,
@@ -385,7 +385,7 @@ var allProducts = [
                 ]
             }
         ],
-        'description' : ''
+        'description' : 'Moisturizers are intended to improve skin hydration and provide a soothing protective film1,2,3. vritilife Moisturizer consists of skin friendly ingredients which retains moisture atleast for 12 Hours^ that advance towards clearer skin and lightens blemishes.It contains natural oils and improves skin expression lines*.Enhance your Skin tone with an Elite Moisturizer.. 1. Purnamawati et al., 2017, Clin Med Res. 2017 Dec; 15(3-4): 75–87.. 2. Jemec and Na. Acta Derm Venereol . 2002;82(5):322-4.. 3. Madison. J Invest Dermatol . 2003 Aug;121(2):231-41.'
     },
     {
         'id' : '046K' ,
@@ -405,7 +405,7 @@ var allProducts = [
                 ]
             }
         ],
-        'description' : ''
+        'description' : 'Ageing, stress, unhealthy lifestyles and diets, solar radiation and pollution can damage our skin*. To maintain skin health, HN - Skin Booster is the best way to supplement with the collagen and vitamins that skin needs.. Designed to nourish your skin from within and provide the nutrients to maintain healthy skin. Formulated with hydrolised fish collagen and vitamins that required for healthy skin. HN - Skin Booster is a rich source of Vitamins C, B2,B3, B6 and biotin. Each serving provides 5 grams of hydrolised fish collagen. Collagen helps support skin health. Delicious orange flavoured collagen drink mix. No artificial colour. No artificial sweetener. Easy to use, on-the-go format.'
     },
     {
         'id' : '316K' ,
@@ -421,7 +421,7 @@ var allProducts = [
                 ]
             }
         ],
-        'description' : ''
+        'description' : 'Everyday solution to support your skin health * with HN- Skin booster.. HN - Skin Booster is formulated with hydrolised fish collagen and a blend of essential vitamins to help you maintain healthy skin. Designed to nourish your skin from within, HN - Skin Booster  support your skin health* with minimum effort and it provides nutrition for your skin.. HN - Skin Booster is designed to complement your beauty regime so you  may use it alongside your existing skincare routine. With its refreshing orange flavour, this delicious drink is  likely to become your new favourite beauty secret.'
     },
     {
         'id' : '115K' ,
@@ -441,7 +441,7 @@ var allProducts = [
                 ]
             }
         ],
-        'description' : ''
+        'description' : 'Vritilife - Immune Health.. Feature and benefits.. Formulated with ancient Ayurvedic knowledge along with established research and technology. Kalmegh** helps manage symptoms of common cold. 100% pure extracts of Kalmegh and Tulasi. Tulasi helps support cellular defence and promotes natural immunity. Kalmegh** extract has been tested at 5 stages to ensure quality. Verified quality of Kalmegh** extract having traceability right from the farm. Contains other traditional ingredients from Ancient Ayurvedic knowledge such as Kutaki.'
     },
     {
         'id' : '1295' ,
@@ -525,7 +525,7 @@ var allProducts = [
                 ]
             },
         ],
-        'description' : ''
+        'description' : 'Enhance Your Energy Level!.. Afresh is a refreshing energy drink mix that contains orange pekoe extract, green tea extract and caffeine powder. Enjoy it hot or cold at any time of the day.. Key Benefits.. Afresh Energy drink mix contains natural sources of caffeine for an uplifting treat. Caffeine provides a gentle boost¹‚². Caffeine helps you feel energized². Caffeine supports mental alertness and concentration¹. Contains 40 mg of caffeine per serving. Provides less than 4 Kcal of energy per serving. Convenient, on-the-go powder form.'
     },
     {
         'id' : '1458' ,
@@ -545,7 +545,7 @@ var allProducts = [
                 ]
             }
         ],
-        'description' : ''
+        'description' : 'H24 Hydrate is developed by experts in sports nutrition. It helps replenish the body with bioavailable electrolytes. When mixed with water, it is a perfect any-time hydration option for everyone. This refreshing orange flavoured drink has an osmolality of less than 270 mOsmol/kg.. Mix content of one sachet (5 g) with 500 ml of water. Use 1 serving per day.'
     },
     {
         'id' : '031K' ,
@@ -567,7 +567,7 @@ var allProducts = [
                 ]
             }
         ],
-        'description' : ''
+        'description' : 'Recovery shake mix that delivers a tri-core protein-amino blend of free amino acids.. Key Benefits.. Whey and casein proteins help rebuild fatigued muscle Contains protein, L-glutamine and Branch Chain Amino Acids. Carbohydrate helps enhance muscle recovery by supporting the delivery of BCAAs for muscle synthesis. L-glutamine helps support muscle recovery. Provides vitamins and minerals. Available in convenient on-the-go format. Tested for banned substances*.'
     },
     {
         'id' : '1279' ,
@@ -598,7 +598,7 @@ var allProducts = [
                 ]
             }
         ],
-        'description' : ''
+        'description' : 'You want the best nutrition for your children so that they grow up healthy and strong. Herbalife Nutrition Dinoshake can help your children meet their nutrient requirements.. Fast Facts.. Children need more nutrients than adults for their growth and development to get your child to a “smart start” include Herbalife Dinoshake as part of a balanced breakfast. Great to taste, the shakes are bound to be their favourite any day. Dinoshake is an easy way to ensure that your child gets protein and other essential nutrients in their daily diet.'
     },
     {
         'id' : '1278' ,
@@ -618,7 +618,7 @@ var allProducts = [
                 ]
             }
         ],
-        'description' : ''
+        'description' : 'Adequate dietary fibre is essential for good health. Includes fibre from pea and oats to help increase your fibre intake.. Key Benefits.. Consumption of fibre aids in digestive health. Activated Fibre is composed of fibres derived from various vegetable sources. Activated Fibre includes oat fibre and pea fibre to provide a blend of fibre.. Fast Facts.. Activated Fibre tablets, a blend of dietary fibre’s including citrus pea and oat fibre, are a convenient way to increase your intake of healthy fibre daily. It is a combination of soluble and insoluble dietary fibre’s that helps curb appetite by providing a feeling of fullness and reducing the indulgence to over eat.'
     },
     {
         'id' : '2865' ,
@@ -638,7 +638,7 @@ var allProducts = [
                 ]
             }
         ],
-        'description' : ''
+        'description' : 'Active fiber complex Contains a combination of soluble and insoluble fibres from various fruits and vegetable sources.. Key Benefits.. One serving provides 5 grams of fibre.. Convenient way to increase daily intake of dietary fibres.. Adequate amount of fibre in daily diet may help improve intestinal regularity and support regular bowel function.'
     },
     {
         'id' : '1293' ,
@@ -658,7 +658,7 @@ var allProducts = [
                 ]
             }
         ],
-        'description' : ''
+        'description' : 'Aloe Plus contains high quality purified aloe vera leaf concentrate.. Key Benefits.. Aloe vera is well-known worldwide for its traditional use as a food It is traditionally used to help support healthy digestion, soothe the stomach, and absorb nutrients.. Fast Facts.. Aloe vera is well known worldwide for its traditional use as a food. Aloe vera has been used traditionally in India for general well-being. It is traditionally used to help support healthy digestion, soothe the stomach, support digestive health and the absorption of nutrients. Aloe Plus contains high quality purified aloe vera leaf concentrate - Aloe helps support digestion and relieves discomfort.'
     },
     {
         'id' : '0006' ,
@@ -678,7 +678,7 @@ var allProducts = [
                 ]
             }
         ],
-        'description' : ''
+        'description' : 'Herbal Aloe Concentrate is formulated with premium quality aloe vera. Aloe soothes the stomach and is traditionally used for general wellbeing.. Key Benefits.. Refreshing and soothing Aloe drink mix. Contains the goodness of Aloe vera. Low-calorie. Aloe vera helps support intestinal health. Aloe vera helps soothe the stomach. Aloe vera helps support nutrient absorption.'
     },
     {
         'id' : '025K' ,
@@ -699,7 +699,7 @@ var allProducts = [
                 ]
             }
         ],
-        'description' : ''
+        'description' : 'Simply Probiotic is a science backed probiotic that helps support digestive health. Powered by Unique IS 2® strain, it survives the gastric journey to get to where it counts, helping you feel your best every day.. Key Benefits.. Simply Probiotic contains Unique IS 2® strain, which is a bacillus coagulans, that is tough enough to survive the stomach’s acidic environment to reach the intestines right where it needs to be. It comes in a powdered format that mixes easily in any food or beverage (hot, cold or frozen). Requires no refrigeration. No added flavours , colors, sugars or sweeteners.'
     },
     {
         'id' : '186K' ,
@@ -719,7 +719,7 @@ var allProducts = [
                 ]
             }
         ],
-        'description' : ''
+        'description' : 'Vritilife - Triphala tablet is a combination of three indigenous fruits -Indian gooseberry (Amla), Chebulic myrobalan (Harad) and Bedda nut tree (Baheda). It is a uniquely processed, standardized, 5X concentrated Triphala extract blended with Triphala powder comprising full spectrum of actives. Triphala extract is standardized to 50% Tannin 5-6% Gallic acid.'
     },
     {
         'id' : '0020' ,
@@ -739,7 +739,7 @@ var allProducts = [
                 ]
             }
         ],
-        'description' : ''
+        'description' : 'Calcium is required for various physiological processes, its regular consumption is of utmost importance. Adequate calcium intake helps acquire bone mass and attain bone density throughout life. Vitamin D and Magnesium are needed for the better absorption of Calcium for these physiological processes.'
     },
     {
         'id' : '0555' ,
@@ -759,7 +759,7 @@ var allProducts = [
                 ]
             }
         ],
-        'description' : ''
+        'description' : 'Specially formulated with glucosamine.. Key Benefits.. Glucosamine helps support joint function and flexibility.. Also contains Scutellaria root extract and essential trace minerals like copper and manganese..'
     },
     {
         'id' : '2637' ,
@@ -779,7 +779,7 @@ var allProducts = [
                 ]
             }
         ],
-        'description' : ''
+        'description' : 'Herbalife Niteworks® is a refreshing powder mix containing L-Arginine which helps create more nitric oxide. Research indicates that the L-Arginine helps you produce nitric oxide, which can help your cardiovascular and circulatory system to stay healthy. It also contains Vitamin C, E and folic acid.. Niteworks® can be incorporated into your routine with ease and can be consumed any time during the day or night.'
     },
     {
 
@@ -799,7 +799,7 @@ var allProducts = [
                 ]
             }
         ],
-        'description' : ''
+        'description' : 'Unlock the benefits of Omega-3 fatty acids with Herbalifeline®,  formulated with fish oils.. Herbalife Herbalifeline is a blend of highly purified marine lipids containing Omega-3 fatty acids, such as Eicosapentaenoic Acid (EPA) and Docosahexaenoic Acid (DHA). These Omega-3 fatty acids help to maintain a healthy cardiovascular system by maintaining blood triglycerides levels within normal range1.. Herbalifeline® comes in convenient softgel capsules, carefully crafted with thyme and peppermint essential oils to give you a fresh aftertaste. 1. Balk, E.M., Lichtenstein, A.H., Chung, M., Kupelnick, B., Chew, P., & Lau, J. (2006). Atherosclerosis, 189(1), 19-30. doi: 10.1016/j.atherosclerosis.2006.02.012.'
     },
     {
         'id' : '051K' ,
@@ -821,7 +821,7 @@ var allProducts = [
                 ]
             }
         ],
-        'description' : ''
+        'description' : 'Beta Heart is a nutritious powder containing Oat beta glucan as key ingredient.. Key Benefits.. Oat beta-glucan is a natural form of soluble fibre found mostly in the outer layer of oat grains. One serving provides 3 g of oat beta-glucan a soluble dietary fibre. Daily intake of 3 g of soluble dietary fibre as part of a diet may help in the maintenance of healthy blood cholesterol levels*. No added sugar. No added colours. Natural vanilla flavour. On-the-go format, single-serving sachet. Consume any time of the day or night. Perfect to customize your favorite Formula 1 Nutritional Shake Mix.'
     },
     {
         'id' : '1232' ,
@@ -840,7 +840,7 @@ var allProducts = [
                 ]
             }
         ],
-        'description' : ''
+        'description' : 'Formula 2 Multivitamin Mineral & Herbal Tablets Plus provides a unique blend of 22 essential vitamins, minerals and herbs.. Key Benefits.. It provides 22 essential micronutrients i.e., vitamins and minerals that provide nutritional support to your body.. Includes the antioxidant vitamins C, E and beta-carotene which are important for maintaining good health.'
     },
     {
         'id' : '3123' ,
@@ -860,7 +860,7 @@ var allProducts = [
                 ]
             }
         ],
-        'description' : ''
+        'description' : 'Packed with select botanicals & nutrients.. Key Benefits.. Contains Alpha Lipoic acid (ALA), a known antioxidant. Antioxidants help support general well-being and healthy ageing.. Fast Facts.. Sometimes just eating balanced meals does not ensure that we absorb all the nutrients from it effectively. For a variety of reasons like illness or stress, we may be unable to derive all the nutrients from our food, even when we eat balanced meals regularly.'
     },
     {
         'id' : '0111' ,
@@ -869,7 +869,7 @@ var allProducts = [
         'mrp' : 1916 ,
         'varients' : [
             {
-                'flavour' : '',
+                'flavour' : 'Cell-U-Loss is formulated with corn silk.. Corn silk is traditionally used to support fluid balance.. Fast Facts.. Reduces water retention associated with normal tissue swelling, by promoting fluid loss through healthy elimination of water. Supports the reduction of subcutaneous accumulation of water,which may improve appearance of skin.* Cell-U-Loss assists with natural detoxification processes.*',
                 'quantity' : '90 Number',
                 'image' : [
                     'celluloss-A.jpg',
@@ -900,6 +900,6 @@ var allProducts = [
                 ]
             }
         ],
-        'description' : ''
+        'description' : 'Herbal Control has a unique blend of green, black and oolong tea – known sources of polyphenols. Teas have been shown to contain many antioxidants, collectively known as polyphenols.. Key Benefits.. Contains natural sources of caffeine for an uplifting treat*. Caffeine is known for its thermogenic benefits**. Caffeine helps stimulate metabolism*. Helps provide an energetic feeling and increases alertness*.'
     },
 ]
