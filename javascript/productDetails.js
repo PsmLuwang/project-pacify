@@ -869,7 +869,7 @@ var allProducts = [
         'mrp' : 1916 ,
         'varients' : [
             {
-                'flavour' : 'Cell-U-Loss is formulated with corn silk.. Corn silk is traditionally used to support fluid balance.. Fast Facts.. Reduces water retention associated with normal tissue swelling, by promoting fluid loss through healthy elimination of water. Supports the reduction of subcutaneous accumulation of water,which may improve appearance of skin.* Cell-U-Loss assists with natural detoxification processes.*',
+                'flavour' : 'Cell-U-Loss is formulated with corn silk.. Corn silk is traditionally used to support fluid balance.. Fast Facts.. Reduces water retention associated with normal tissue swelling, by promoting fluid loss through healthy elimination of water. Supports the reduction of subcutaneous accumulation of water,which may improve appearance of skin.* Cell-U-Loss assists with natural detoxification processes.',
                 'quantity' : '90 Number',
                 'image' : [
                     'celluloss-A.jpg',
