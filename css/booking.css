@@ -1,0 +1,147 @@
+body {
+    background-color: #b6bfff;
+}
+.eventTicketSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.ticketBookingContainer {
+    width: calc(100% - 20px);
+    max-width: 920px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    padding: 10px;
+    margin-bottom: 100px;
+    /* height: 300px; */
+}
+
+.faded-background {
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,5));
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    border-radius: 10px;
+}
+.imageBox {
+    margin-bottom: 10px;
+}
+.imageBox > div {
+    position: relative;
+}
+.ticketBookingContainer > div {
+    flex: 1 0 280px;
+}
+.imageBox > div > h2 {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.819);
+    bottom: 1%;
+    right: 20px;
+}
+.imageBox img {
+    width: 100%;
+    border-radius: 10px;
+}
+.eventDetails,
+.bookingDetails {
+    background-color: white;
+    border-radius: 10px;
+    padding-block: 1px;
+    margin-bottom: 10px;
+}
+.descriptionBox {
+    background-color: antiquewhite;
+}
+.eventDetails > p,
+.eventDetails > h4,
+.bookingDetails > p,
+.bookingDetails > h4 {
+    margin-inline: 15px;
+}
+.eventDetails i,
+.bookingDetails > p > i {
+    width: 25px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.description {
+    color: rgba(0, 0, 0, 0.635);
+}
+
+
+.purchaseBtn {
+    display: flex;
+    margin-inline: 15px;
+    column-gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.purchaseBtn > button {
+    flex: 1;
+    background-color: orange;
+    border: none;
+    border-radius: 30px;
+    height: 40px;
+    font-weight: bold;
+    color: white;
+}
+.purchaseBtn > div {
+    display: flex;
+    width: 90px;
+    justify-content: space-between;
+    align-items: center;
+}
+.purchaseBtn > div > button {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    border: none;
+}
+.purchaseBtn > div > p {
+    margin: 0;
+}
+.popularEventPrice {
+    text-align: right;
+    color: rgb(255, 166, 0);
+}
+.popularEventPrice > span {
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+@media (max-width: 700px) {
+    h4 {
+        margin-block: 10px;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+}
+
+.priceTable {
+    margin-inline: 15px;
+}
+.priceTable > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.priceTable > div > p:last-child {
+    flex: 1;
+    max-width: 70px;
+}
+.priceTable > section {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+}
