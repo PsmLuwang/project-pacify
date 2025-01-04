@@ -65,12 +65,12 @@ function listing(discount) {
         });
     });
 
-    const clickSound = document.querySelectorAll('.clickSound');
-    clickSound.forEach(btn => {
-        btn.addEventListener('click', () => {
-            document.getElementById('clickSound').play()
-        })
-    })
+    // const clickSound = document.querySelectorAll('.clickSound');
+    // clickSound.forEach(btn => {
+    //     btn.addEventListener('click', () => {
+    //         document.getElementById('clickSound').play()
+    //     })
+    // })
 }
 
 function selectingProduct(action, index, discount) {
@@ -80,6 +80,7 @@ function selectingProduct(action, index, discount) {
         productDetails[index].qty--;
     }
     listing(discount);
+    // document.getElementById('clickSound').play()
 }
 
 function findTotalVp() {
@@ -135,8 +136,8 @@ function generate(discount) {
                     <div class="receiptDetails">
                         <div class="dateInHead">
                             <p><b>Invoice : </b>6248788</p>
-                            <p><b>Date : </b>12th - Dec - 2024</p>
-                            <p><b>Time : </b>10:00 pm</p>
+                            <p><b>Date : </b>${findToadysDate()[0]}</p>
+                            <p><b>Time : </b>${findToadysDate()[1]}</p>
                             <p><b>Remark : </b></p>
                             <input type="text">
                         </div>
@@ -275,4 +276,44 @@ function save(discount) {
     });
     console.log(invoice);
 
+}
+
+
+function findToadysDate() {
+    const now = new Date();
+    
+    let dd = now.getDate();
+    let mm = now.getMonth() + 1;
+    let yyyy = now.getFullYear();
+
+    if (dd < 10) {
+        dd = '0' + dd;
+    }
+    if (mm == 1) {
+        mm = 'Jan';
+    } else if (mm == 2) {
+        mm = 'Feb';
+    } else if (mm == 3) {
+        mm = 'Mar';
+    } else if (mm == 4) {
+        mm = 'Apr';
+    } else if (mm == 5) {
+        mm = 'May';
+    } else if (mm == 6) {
+        mm = 'Jun';
+    } else if (mm == 7) {
+        mm = 'Jul';
+    } else if (mm == 8) {
+        mm = 'Aug';
+    } else if (mm == 9) {
+        mm = 'Sep';
+    } else if (mm == 10) {
+        mm = 'Oct';
+    } else if (mm == 11) {
+        mm = 'Nov';
+    } else if (mm == 12) {
+        mm = 'Dec';
+    }
+    const todaysDate = [dd + '-' + mm + '-' + yyyy , now.toLocaleTimeString()] 
+    return todaysDate;
 }
