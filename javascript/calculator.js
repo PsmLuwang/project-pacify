@@ -33,9 +33,9 @@ function listing(discount) {
                     <div>vp</div>
                     <div>Price</div>
                     <div>
-                        <button style="background : rgba(255, 72, 0, 0.8)">-</button>
+                        <button style="background : rgba(255, 72, 0, 0.6)">-</button>
                         <div>qty.</div>
-                        <button style="background : rgba(73, 159, 82, 0.9)">+</button>
+                        <button style="background : rgba(73, 159, 82, 0.6)">+</button>
                     </div>
                 </div>
             `;
@@ -46,9 +46,9 @@ function listing(discount) {
                         <div>${productDetails[i].vp}</div>
                         <div>₹${productDetails[i][discount]}</div>
                         <div>
-                            <button onclick="selectingProduct('remove', ${i}, '${discount}')" style="background : rgba(255, 72, 0, 0.8)">-</button>
+                            <button onclick="selectingProduct('remove', ${i}, '${discount}')" style="background : rgba(255, 72, 0, 0.4)">-</button>
                             <div>${productDetails[i].qty}</div>
-                            <button onclick="selectingProduct('add', ${i}, '${discount}')" style="background :rgba(73, 159, 82, 0.9)">+</button>
+                            <button onclick="selectingProduct('add', ${i}, '${discount}')" style="background :rgba(73, 159, 82, 0.4)">+</button>
                         </div>
                     </div>
                 `;
