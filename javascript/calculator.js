@@ -33,12 +33,11 @@ function listing(discount) {
                     <div>vp</div>
                     <div>Price</div>
                     <div>
-                        <button>-</button>
+                        <button style="background : rgba(255, 72, 0, 0.8)">-</button>
                         <div>qty.</div>
-                        <button>+</button>
+                        <button style="background : rgba(73, 159, 82, 0.9)">+</button>
                     </div>
                 </div>
-                <audio id="clickSound" src="../asset/sound/iphoneClickSound.mp3" preload="auto"></audio>
             `;
     for (let i = 0; i < productDetails.length; i++) {
         tableContainer.innerHTML += `
@@ -47,9 +46,9 @@ function listing(discount) {
                         <div>${productDetails[i].vp}</div>
                         <div>₹${productDetails[i][discount]}</div>
                         <div>
-                            <button onclick="selectingProduct('remove', ${i}, '${discount}')" class="clickSound">-</button>
+                            <button onclick="selectingProduct('remove', ${i}, '${discount}')" style="background : rgba(255, 72, 0, 0.8)">-</button>
                             <div>${productDetails[i].qty}</div>
-                            <button onclick="selectingProduct('add', ${i}, '${discount}')" class="clickSound">+</button>
+                            <button onclick="selectingProduct('add', ${i}, '${discount}')" style="background :rgba(73, 159, 82, 0.9)">+</button>
                         </div>
                     </div>
                 `;
@@ -64,13 +63,6 @@ function listing(discount) {
             btn.classList.add("currentDiscount");
         });
     });
-
-    // const clickSound = document.querySelectorAll('.clickSound');
-    // clickSound.forEach(btn => {
-    //     btn.addEventListener('click', () => {
-    //         document.getElementById('clickSound').play()
-    //     })
-    // })
 }
 
 function selectingProduct(action, index, discount) {
